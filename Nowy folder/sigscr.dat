@@ -1,0 +1,2172 @@
+///////////////////////////////////////////////////////////////////////////////
+// Signal Type Logic Scripts
+//
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT TM_KSZT
+
+//Skrypt tarczy manewrowej ksztaltowek
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if ( !enabled ) 
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_RESTRICTING; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT OSKSZT_3_GRN
+
+//Tarczy ostrzegawczej ksztaltowej trzystawnej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if ( next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_CLEAR_2 ) 	
+
+	{ state = SIGASP_CLEAR_2; }
+else
+	{ state = SIGASP_APPROACH_1; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT OSKSZT_3_DLN
+
+//Tarczy "strzaly" w ostrzegawczej ksztaltowej trzystawnej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if ( next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_1 ) 	
+
+	{ state = SIGASP_APPROACH_2; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT OSKSZT_2
+
+//Tarczy tarczy ostrzegawczej ksztaltowej dwustawnej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	float			next_state;
+	//float			czy_na_bok;
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if ( 	next_state ==# SIGASP_STOP ||
+	next_state ==# SIGASP_STOP_AND_PROCEED ) 	
+	{ state = SIGASP_APPROACH_1; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEMKSZT_1
+
+//Skrypt semafora ksztaltowego jednoramiennego
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if (  !enabled ||				   				//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 				//blok zajety
+	next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEMKSZT_2_GRN
+
+//Skrypt gornego ramienia semafora 2-ramiennnego ksztaltowego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			this_state;
+	//float			next_state;
+	//float			ziel_mig_czter;
+
+this_state = this_sig_mr ( SIGFN_NORMAL );
+if ( this_state ==# SIGASP_STOP || this_state ==# SIGASP_STOP_AND_PROCEED 
+	|| this_state ==# SIGASP_RESTRICTING )
+	{ state = SIGASP_STOP; }  //podajemy czerwone
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEMKSZT_2_DLN
+
+//Skrypt dolnego ramienia semafora 2-ramienneg ksztaltowego
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+	if ( !enabled ||
+		block_state() ==# BLOCK_OCCUPIED ||
+		next_sig_mr (SIGFN_NORMAL ) ==# SIGASP_CLEAR_1 ) 
+		{ state = SIGASP_STOP; }
+	else
+		{
+		if ( 
+			(!route_set() ) 
+			|| ( !sig_feature( SIGFEAT_USER1 ) ) 
+		   )
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_CLEAR_2; }
+		}
+	
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT RESET
+
+//Skrypt wskaznika w5
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+	//float			czy_na_bok;
+
+
+if ( !enabled || block_state() ==# BLOCK_OCCUPIED ) 
+	{ state = SIGASP_CLEAR_1; }
+else
+	{	
+		if ( sig_feature ( SIGFEAT_USER1 ) )
+			{ 
+			next_state = next_sig_mr ( SIGFN_NORMAL ); 
+			if ( next_state ==# SIGASP_STOP ) 
+				{ state = SIGASP_STOP_AND_PROCEED; }
+			else
+				{ state = next_state; }
+			}
+		else
+			{ state = SIGASP_CLEAR_2; }
+	}
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT TMAN
+
+//Skrypt tarczy manewrowej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if ( !enabled ) 
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_RESTRICTING; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT TMAN_KARZ
+
+//Skrypt tarczy manewrowej karzelkowej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if ( !enabled ) 
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_RESTRICTING; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT POWT
+
+//Skrypt semafora powtarzajacego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if ( next_state ==# SIGASP_STOP || next_state ==# SIGASP_STOP_AND_PROCEED )  //czy zolte
+	{ state = SIGASP_APPROACH_1; }
+else
+	{
+		if ( next_state ==# SIGASP_APPROACH_1 ) //czy zolte mig.
+			{ state = SIGASP_APPROACH_2; }
+		else 
+			{
+			if (next_state ==# SIGASP_APPROACH_2 ) //czy zielone mig.
+				{state = SIGASP_APPROACH_3;}
+			else 
+				{state = SIGASP_CLEAR_2;} //zielone
+			}
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT OS
+
+//Skrypt tarczy ostrzegawczej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if ( next_state ==# SIGASP_STOP || next_state ==# SIGASP_STOP_AND_PROCEED )  //czy zolte
+	{ state = SIGASP_APPROACH_1; }
+else
+	{
+		if ( next_state ==# SIGASP_APPROACH_1 ) //czy zolte mig.
+			{ state = SIGASP_APPROACH_2; }
+		else 
+			{
+			if (next_state ==# SIGASP_APPROACH_2 ) //czy zielone mig.
+				{state = SIGASP_APPROACH_3;}
+			else 
+				{state = SIGASP_CLEAR_2;} //zielone
+			}
+	}
+
+draw_state = def_draw_state (state);
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT OS_1
+
+//Skrypt tarczy ostrzegawczej jednokomorowej
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if ( next_state ==# SIGASP_STOP || next_state ==# SIGASP_STOP_AND_PROCEED )  //czy zolte
+	{ state = SIGASP_APPROACH_1; }
+else
+	{
+	state = SIGASP_APPROACH_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SBL_DLN
+
+//Skrypt zasadniczej czesci semfora SBL
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+	//float			czy_na_bok;
+
+	
+	if ( block_state() ==# BLOCK_OCCUPIED) 
+		{ state = SIGASP_STOP; }
+	else
+		{
+		next_state = next_sig_mr ( SIGFN_NORMAL );
+		if ( next_state ==# SIGASP_STOP ||
+		     next_state ==# SIGASP_STOP_AND_PROCEED )
+				{ state = SIGASP_APPROACH_2; } //podajemy zolte
+		else //sprawdzamy czy podac zielone migajace
+			{
+			if ( sig_feature( SIGFEAT_USER1 ) && next_state ==# SIGASP_APPROACH_2 )
+				{ state = SIGASP_APPROACH_3;}
+			else
+				{ state = SIGASP_CLEAR_2; }
+			}
+		}
+	
+draw_state = def_draw_state ( state );
+if ( state ==# SIGASP_CLEAR_2 && (!enabled ) )
+	{draw_state = 1; } 
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SBL_GRN
+
+//Skrypt czesci semfora SBL informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			this_state;
+	float			next_state;
+	float			ziel_mig_czter;
+
+this_state = this_sig_mr ( SIGFN_NORMAL );
+if ( this_state ==# SIGASP_STOP || this_state ==# SIGASP_STOP_AND_PROCEED 
+	|| this_state ==# SIGASP_RESTRICTING )
+	{ state = SIGASP_STOP; }  //podajemy puste
+else
+	{
+	if ( this_state ==# SIGASP_APPROACH_2 )
+		{ state = SIGASP_APPROACH_1; } //podajemy zolte
+	else 
+		{
+		if ( this_state ==# SIGASP_APPROACH_3 )
+			{ state = SIGASP_APPROACH_3; } //podajemy zielone migajace
+		else //wiemy, ze tu jest jazda na max
+			{
+			if ( next_sig_mr (SIGFN_NORMAL) ==# SIGASP_APPROACH_1 )
+				{ state = SIGASP_APPROACH_2; } //podajemy zolte migajace
+			else
+				{ state = SIGASP_CLEAR_2;} //podajemy zielone
+			}
+		}	
+	}
+
+draw_state = def_draw_state (state);
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_1
+
+//Skrypt sygnalu zamkniecia toru
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+state = SIGASP_STOP;
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_CB
+
+//Skrypt semafora dwukomorowego czerwone + biale
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+	//float			czy_stop;
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  
+	!enabled ||				   		//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 		//blok zajety
+	next_state  ==# SIGASP_CLEAR_1  		//reset pokazuje zajetosc bloku 
+   ) 						
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_STOP_AND_PROCEED; }
+
+if ( sig_feature( SIGFEAT_USER1 ) )
+	{ 
+	if ( next_state ==# SIGASP_STOP )
+		{ state = SIGASP_STOP;}
+	else
+		{ state = SIGASP_STOP_AND_PROCEED; }
+	}
+draw_state = def_draw_state ( state );
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_CB_KARZ
+
+//Skrypt semafora dwukomorowego czerwone + biale
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	float			next_state;
+	//float			czy_na_bok;
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  
+	!enabled ||				   		//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 		//blok zajety
+	next_state  ==# SIGASP_CLEAR_1  		//reset pokazuje zajetosc bloku 
+   ) 						
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_STOP_AND_PROCEED; }
+
+if ( sig_feature( SIGFEAT_USER1 ) )
+	{ 
+	if ( next_state ==# SIGASP_STOP )
+		{ state = SIGASP_STOP;}
+	else
+		{ state = SIGASP_STOP_AND_PROCEED; }
+	}
+draw_state = def_draw_state ( state );
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_DLN_C
+
+//Skrypt zasadniczej czesci semafora dwukomorowego czerwone + niebiale
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if (  !enabled ||				   				//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 				//blok zajety
+	next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_DLN_C_KARZ
+
+//Skrypt semafora dwukomorowego czerwone + niebiale
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if (  !enabled ||				   				//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 				//blok zajety
+	next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_GRN_Z
+
+//Skrypt czesci semfora SBL informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_GRN_Z_KARZ
+
+//Skrypt czesci semfora SBL informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_GRN_P
+
+//Skrypt czesci semfora 2-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_2_GRN_P_KARZ
+
+//Skrypt czesci semfora 2-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+
+SCRIPT SEM_3_DLN_40_CP
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + zolte)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  
+	!enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+						
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set(); }
+	else
+		{prosto = 1;}
+	if ( !prosto ||  //w bok na rozjezdzie
+		sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+			{ state = SIGASP_APPROACH_1; }
+			else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_40_CP_KARZ
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + zolte)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+	if ( !prosto ||  //w bok na rozjezdzie
+		sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+			{ state = SIGASP_APPROACH_1; }
+			else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_60_CP
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + zolte)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+	if ( !prosto ||  //w bok na rozjezdzie
+		sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+			{ state = SIGASP_APPROACH_1; }
+			else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_100_CP
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + zolte)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+	if ( !prosto ||  //w bok na rozjezdzie
+		sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+			{ state = SIGASP_APPROACH_2; }
+			else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_GRN_P
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_GRN_P_KARZ
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_GRN_Z
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_GRN_Z_KARZ
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_SR_P
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_SR_P_KARZ
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_SR_Z
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_SR_Z_KARZ
+
+//Skrypt czesci semfora 3-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_CB
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + biale)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+		if ( !prosto || 					//w bok na rozjezdzie
+			next_state ==# SIGASP_RESTRICTING )  //jazda na manewrowy
+				
+			{ state = SIGASP_STOP_AND_PROCEED; }
+		else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_CB_KARZ
+
+//Skrypt zasadniczej czesci semafora trojkomorowego (czerwone + biale)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+		if ( !prosto || 					//w bok na rozjezdzie
+			next_state ==# SIGASP_RESTRICTING )  //jazda na manewrowy
+				
+			{ state = SIGASP_STOP_AND_PROCEED; }
+		else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_DLN_C
+
+//Skrypt zasadniczej czesci semafora trojkomorowego zielone + czerwone + pomaranczowe
+
+	extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//float			next_state;
+	//float			czy_na_bok;
+
+
+if (  !enabled ||				   				//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 				//blok zajety
+	next_sig_mr( SIGFN_NORMAL ) ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+else
+	{ state = SIGASP_CLEAR_2; }
+
+draw_state = def_draw_state ( state );
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_3_GRN_ZP
+
+//Skrypt czesci semfora SBL informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+	//czy podac zolte
+	if ( next_state_norm ==# SIGASP_STOP || next_state_norm ==# SIGASP_STOP_AND_PROCEED) 
+		{ state = SIGASP_APPROACH_1; }
+	else
+		{ //czy podac zolte migajace
+		if ( next_state_norm ==# SIGASP_APPROACH_1 ) 
+			{ state = SIGASP_APPROACH_2; 	}	
+		else //czy podac zielone migajace
+			{
+			
+			if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+				{ state = SIGASP_APPROACH_3; }
+			else
+				{ state = SIGASP_CLEAR_2; }			
+
+			}
+
+		}
+
+	}
+
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_4_GRN_P
+
+//Skrypt czesci semfora 4-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_STOP || 
+			next_state_norm ==# SIGASP_STOP_AND_PROCEED) //nastepny stop
+			{ state = SIGASP_APPROACH_1; }
+		else
+			{ state = SIGASP_APPROACH_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_4_GRN_Z
+
+//Skrypt czesci semfora 4-kom. informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+			
+		if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+			{ state = SIGASP_APPROACH_3; }
+		else
+			{ state = SIGASP_CLEAR_2; }			
+
+	
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_4_DLN_CB
+
+//Skrypt zasadniczej czesci semafora czterokomorowego (czerwone + biale)
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+			
+	if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+		{ prosto = route_set (); }
+	else
+		{prosto = 1;}
+	if ( !prosto ||   				//w bok na rozjezdzie
+		next_state ==# SIGASP_RESTRICTING )	//jazda na manewrowy
+		
+			{ state = SIGASP_STOP_AND_PROCEED; }
+			else 
+			{ state = SIGASP_CLEAR_2; }
+	}
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_4_GRN_ZP
+
+//Skrypt czesci semafora czterokomorowego informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+	//czy podac zolte
+	if ( next_state_norm ==# SIGASP_STOP || next_state_norm ==# SIGASP_STOP_AND_PROCEED) 
+		{ state = SIGASP_APPROACH_1; }
+	else
+		{ //czy podac zolte migajace
+		if ( next_state_norm ==# SIGASP_APPROACH_1 ) 
+			{ state = SIGASP_APPROACH_2; 	}	
+		else //czy podac zielone migajace
+			{
+			
+			if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+				{ state = SIGASP_APPROACH_3; }
+			else
+				{ state = SIGASP_CLEAR_2; }			
+
+			}
+
+		}
+
+	}
+
+
+draw_state = def_draw_state (state);
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_5_DLN_40_CPB
+
+//Skrypt zasadniczej czesci semafora z sygnalem zastepczym
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED  || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+	if ( sig_feature ( SIGFEAT_USER4 ) ||  //zawsze podajemy sygnal zastepczy
+	    next_state ==# SIGASP_RESTRICTING )  //jazda na manewrowy	
+		{ state = SIGASP_STOP_AND_PROCEED; }
+		else
+			{
+			if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+				{ prosto = route_set (); }
+			else
+				{prosto = 1;}
+
+			if ( !prosto ||  //w bok na rozjezdzie
+			sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+				{ state = SIGASP_APPROACH_1; }
+				
+			else 
+				{ state = SIGASP_CLEAR_2; }
+			}
+	if ( !route_set() && sig_feature ( SIGFEAT_USER3 )  ) {state = SIGASP_STOP_AND_PROCEED; }
+	}
+
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_5_DLN_60_CPB
+
+//Skrypt zasadniczej czesci semafora z sygnalem zastepczym
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+	if ( sig_feature ( SIGFEAT_USER4 ) || 		//zawsze podajemy sygnal zastepczy
+		next_state ==# SIGASP_RESTRICTING ) 	//jazda na manewrowy
+		{ state = SIGASP_STOP_AND_PROCEED; }
+		else
+			{
+			if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+				{ prosto = route_set (); }
+			else
+				{prosto = 1;}
+
+			if ( !prosto ||  //w bok na rozjezdzie
+			sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+				{ state = SIGASP_APPROACH_1; }
+				
+			else 
+				{ state = SIGASP_CLEAR_2; }
+			}
+	if ( !route_set() && sig_feature ( SIGFEAT_USER3 )  ) {state = SIGASP_STOP_AND_PROCEED; }
+	}
+
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_5_DLN_100_CPB
+
+//Skrypt zasadniczej czesci semafora z sygnalem zastepczym
+
+	extern float	block_state ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	//extern float	this_sig_mr ();
+	float			next_state;
+	//float		next_state_dist;
+	float			prosto;
+	
+
+
+next_state = next_sig_mr ( SIGFN_NORMAL );
+if (  !enabled ||				   	//przebieg nieustawiony
+	block_state() ==# BLOCK_OCCUPIED || 	//blok zajety
+	next_state ==# SIGASP_CLEAR_1 ) 	//reset pokazuje zajetosc bloku 
+
+	{ state = SIGASP_STOP; }
+
+else //podajemy sygnal zezwalajacy na jazde
+	{
+	if ( sig_feature ( SIGFEAT_USER4 ) || 	//zawsze podajemy sygnal zastepczy
+		next_state ==# SIGASP_RESTRICTING ) //jazda na manewrowy
+		{ state = SIGASP_STOP_AND_PROCEED; }
+		else
+			{
+			if ( sig_feature ( SIGFEAT_USER1 ) ) //zalezny od zwrotnicy
+				{ prosto = route_set (); }
+			else
+				{prosto = 1;}
+
+			if ( !prosto ||  //w bok na rozjezdzie
+			sig_feature ( SIGFEAT_USER2 )  ) //uzytkownik nie zezwala na wiecej 
+				{ state = SIGASP_APPROACH_2; }
+				
+			else 
+				{ state = SIGASP_CLEAR_2; }
+			}
+	if ( !route_set() && sig_feature ( SIGFEAT_USER3 )  ) {state = SIGASP_STOP_AND_PROCEED; }
+	}
+
+draw_state = def_draw_state (state);
+//ewentualnie podajemy sygnal manewrowy
+if ( ( state ==# SIGASP_STOP_AND_PROCEED ) && ( next_state ==# SIGASP_RESTRICTING ) )
+	{draw_state = 2;}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT SEM_5_GRN_ZP
+
+//Skrypt czesci semafora pieciokomorowego informujacej o nastepnym sygnale
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	float			next_state_norm;
+	float			next_state_dist;
+	float			this_signal;
+
+this_signal = this_sig_mr ( SIGFN_NORMAL );
+if ( this_signal ==# SIGASP_STOP  || 
+	this_signal ==# SIGASP_STOP_AND_PROCEED) // jesli tu jest stop, to nic nie podajemy
+	{
+	state = SIGASP_STOP;
+	}
+else
+	{
+	next_state_norm = next_sig_mr ( SIGFN_NORMAL );
+	//czy podac zolte
+	if ( next_state_norm ==# SIGASP_STOP || next_state_norm ==# SIGASP_STOP_AND_PROCEED) 
+		{ state = SIGASP_APPROACH_1; }
+	else
+		{ //czy podac zolte migajace
+		if ( next_state_norm ==# SIGASP_APPROACH_1 ) 
+			{ state = SIGASP_APPROACH_2; 	}	
+		else //czy podac zielone migajace
+			{
+			
+			if ( next_state_norm ==# SIGASP_APPROACH_2 ) //nastepny ograniczenie do 100
+				{ state = SIGASP_APPROACH_3; }
+			else
+				{ state = SIGASP_CLEAR_2; }			
+
+			}
+
+		}
+
+	}
+
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_100
+
+//Skrypt pasa swietlnego zielonego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_2 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_100_P
+
+//Skrypt pasa swietlnego zielonego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_2 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_100_L
+
+//Skrypt pasa swietlnego zielonego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_2 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_60
+
+//Skrypt pasa swietlnego zoltego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_1 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_60_L
+
+//Skrypt pasa swietlnego zoltego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_1 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PAS_60_P
+
+//Skrypt pasa swietlnego zoltego
+
+	//extern float	block_state ();
+	//extern float	route_set ();
+	//extern float	next_sig_mr ();
+	extern float	def_draw_state ();
+	//extern float	sig_feature ();
+	extern float	state;
+	extern float	draw_state;
+	//extern float	enabled;
+	extern float	this_sig_mr ();
+	//float			next_state;
+	//float			next_state_dist;
+	//float			this_signal;
+
+if ( this_sig_mr( SIGFN_NORMAL ) ==# SIGASP_APPROACH_1 )  //czy zapalic pas
+	{ state = SIGASP_CLEAR_1; }
+else
+	{
+	state = SIGASP_CLEAR_2;
+	}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+// End of File

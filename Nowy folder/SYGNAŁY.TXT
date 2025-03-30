@@ -1,0 +1,164 @@
+________________________________________________________________
+
+Polskie obiekty do MSTS v. 1.0
+Copyright (C) by Marcin Kysiak.
+________________________________________________________________
+
+Autor niniejszego dodatku nie przyjmuje na siebie zadnej odpowiedzialnosci za ewentualne szkody, jakie moze spowodowac jego instalacja oraz uzywanie. 
+
+Autor dodatku udziela licencji na zainstalowanie i uzywanie dodatku na prywatny, niekomercyjny uzytek. Redystrybucja i umieszczanie na stronach WWW, serwerach FTP i innych miejsach publicznie dostepnych w sieci bez zgody autora zabronione.
+Korzystanie z pakietu lub jego czesci w projektach komercyjnych bez zgody autora zabronione.
+________________________________________________________________
+
+ZAWARTOSC:
+
+W obecnej wersji pakietu znajduja sie nastepujace obiekty:
+
+1. Semafory polsamoczynne swietlne wysokie o ukladach swiatel:
+- czerwone
+- czerwone + zielone 
+- czerwone + pomaranczowe 
+- czerwone + biale 
+- pomaranczowe + czerwone + pomaranczowe 
+- pomaranczowe + czerwone + pomaranczowe + zielony pas 
+- pomaranczowe + czerwone + pomaranczowe + pomaranczowy pas 
+- zielone + czerwone + pomaranczowe (*) 
+- zielone + czerwone + pomaranczowe (**) 
+- zielone + czerwone + pomaranczowe + zielony pas 
+- zielone + czerwone + pomaranczowe + pomaranczowy pas
+- czerwone + zielone + biale
+- czerwone + pomaranczowe + biale
+- pomaranczowe + czerwone + pomaranczowe + biale (***)
+- pomaranczowe + czerwone + pomaranczowe + biale (****)
+- pomaranczowe + czerwone + pomaranczowe + biale + zielony pas
+- pomaranczowe + czerwone + pomaranczowe + biale + pomaranczowy pas
+- zielone + czerwone + pomaranczowe + biale
+- zielone + czerwone + pomaranczowe + biale + zielony pas
+- zielone + czerwone + pomaranczowe + biale + pomaranczowy pas
+- zielone + pomaranczowe + czerwone + pomaranczowe + biale
+- zielone + pomaranczowe + czerwone + pomaranczowe + biale + ziel. pas
+- zielone + pomaranczowe + czerwone + pomaranczowe + biale + pom. pas
+
+(*) 	Wyswietla sygnaly: S1, S2, S3, S10, S11;
+(**) 	Wyswietla sygnaly: S1, S2, S3, S4, S5;
+(***) 	Wyswietla sygnaly: S1, S2, S3, S10, S11, Sz;
+(****) 	Wyswietla sygnaly: S1, S2, S3, S4, S5, Sz.
+
+Wiekszosc wyzej wymienionych semaforow ma wersje na wysiegnikach, oznaczone w opisie jako lewy/prawy.
+
+2. Semafory polsamoczynne swietlne niskie o ukladach swiatel:
+- czerwone + zielone
+- czerwone + pomaranczowe
+- czerwone + biale
+- pomaranczowe + czerwone + pomaranczowe
+- zielone + czerwone + pomaranczowe
+- czerwone + zielone + biale
+- czerwone + pomaranczowe + biale
+
+3. Semafory ksztaltowe jedno i dwuramienne.
+
+4. Semafor SBL (rowniez w wersjach na wysiegnikach)
+
+5. Tarcze ostrzegawcze swietlne o ukladach swiatel:
+- zielone + pomaranczowe (rowniez w wersjach na wysiegnikach)
+- pomaranczowe
+
+6. Tarcze ostrzegawcze ksztaltowe dwu- i trzystawne.
+ 
+7. Semafor powtarzajacy swietlny (rowniez w wersjach na wysiegnikach)
+
+8. Tarcze manewrowe:
+- wysoka swietlna
+- karzelkowa
+- ksztaltowa
+
+9. Wskaznik w5 (patrz uwagi)
+
+10. Zestaw wybranych, ale najczesciej uzywanych wskaznikow (w obecnej wersji brakuje jeszcze wskaznika w24).
+
+11. Zestaw bramek i slupow trakcyjnych przystosowanych do automatycznego rozmieszczania w Route Editor.
+
+11. Slupki kilometrowe, wskazniki ograniczen stalych i czasowych zintegrowane z systemem ograniczen predkosci MSTS.
+________________________________________________________________
+
+INSTALACJA:
+
+1. Korzystajac z narzedzia MSTS Route Geometry Extractor stworzyc nowa trase.
+2. Rozpakowac plik .zip do katalogu nowo stworzonej trasy zastepujac stare pliki nowymi.
+3. Zawartosc pliku AddToRef.dat skopiowac na koniec pliku *.ref znajdujacego sie w glownym katalogu utworzonej trasy.
+4. Uruchomic symulator. W wypadku wyswietlenia komunikatu o bledach usunac lub przeniesc w inne miejsce caly katalog z trasa oraz powiadomic autora (mkysiak@poczta.onet.pl).
+
+________________________________________________________________
+
+UWAGI:
+
+1. W niektorych semaforach polsamoczynnych dostepne sa nastepujace opcje:
+
+- "Zalezny od zwrotnicy". Opcja ta pozwala wskazac, w ktorym kierunku odbywa sie jazda "prosto". Przy ustawieniu przebiegu w innym niz wskazany kierunku semafor bedzie pokazywal ograniczenie predkosci. Aby wskazac przebieg nalezy kliknac uaktywniajacy sie przycisk <Link>. 
+- "Zawsze ograniczenie". Jezeli nie korzystamy z opcji "zalezny od zwrotnicy" semafor bedzie zawsze wskazywal jazde z max. dozwolona predkoscia lub stop. W tej sytuacji zaznaczenie tej opcji spowoduje, ze semafor bedzie zawsze pokazywal ograniczenie predkosci. Przydatne np. przy wyjazdach ze stacji z torow bocznych na szlak jednotorowy.
+- "Zastepczy przy niewlasciwym". W przypadku ustawienia przebiegu niezgodnego ze wskazanym w opcji 1. semafor pokaze sygnal zastepczy. Przydatne np. przy wyjezdzie ze stacji na szlak dwutorowy.
+- "Zawsze zastepczy". Jedynym sygnalem zezwalajacym na jazde jest sygnal zastepczy. 
+- "Kolejnosc ustawiania". Bywa, ze na semaforze nie mozna podac sygnalu zezwalajacego na jazde, jezeli nastepny semafor wskazuje STOP (np. wyjazd z semafora zaporowego na semafor wyjazdowy grupowy). Zaznaczenie tej opcji powoduje takie wlasnie dzialanie semafora.
+
+2. Domyslnie semafor SBL jest semaforem blokady trojstawnej (czerwone <- zolte <- zielone). Mozna zmienic ustawienie zaznaczajac opcje "Blokada czterostawna" (czerwone <- zolte <- zielone migajace <- zielone). Opcje ta nalezy rowniez wlaczyc (niezaleznie od typu blokady na danej linii) w ostatnim semaforze SBL przed semaforem wjazdowym mogacym pokazywac ograniczenie do 100 km/h.
+
+3. Dzialanie tarcz i sygnalow manewrowych jest w systemie mocno ograniczone. Spowodowane jest to tym, ze MSTS nie rozroznia jazdy manwewrowej od pociagowej. W zwiazku z tym:
+
+a) Tarcza manewrowa wyswietla sygnal wylacznie w zaleznosci od tego, czy zostal ustawiony przebieg. W zwiazku z tym nie bedzie dzialala prawidlowo przy "dowolnym" manewrownaniu przy recznym przestawianiu zwrotnic. Zalecam zatem stosowanie tarcz manewrowych wylacznie na torach, przez ktore nie jest prowadzona jazda pociagowa.
+
+b) Sygnal "Jazda manewrowa dozwolona" na semaforze swietlnym wyposazonym w swiatlo biale wyswietli sie wtedy i tylko wtedy, gdy nastepnym napotkanym sygnalem bedzie tarcza manewrowa wskazujaca sygnal zezwalajacy na jazde. Nalezy miec to na uwadze zarowno przy umieszczaniu tarcz manewrowych jak i przy projektowaniu "Activities".
+
+4. Wbrew pozorom z punktu widzenia MSTS wskaznik w5 jest semaforem. Ograniczenie predkosci semafora wyjazdowego obowiazuje tylko do tego wskaznika. Nalezy umieszczac go przy wyjezdzie z kazdej stacji/posterunku/mijanki itp. Wyjatkiem moze byc (choc nie musi) wyjazd na szlak z samoczynna blokada liniowa.
+
+5. Wskaznik w5 posiada opcje "Miedzy semaforami sprzezonymi". Nalezy ja  zaznaczyc, jezeli wskaznik ten stoi pomiedzy dwoma semaforami, ktorych wskazania sa od siebie uzaleznione (typowa sytuacja to w5 pomiedzy semaforem wyjazdowym a pierwszym semaforem SBL). W przeciwnym wypadku opcja powinna pozostac niezaznaczona.
+
+6. Niektore semafory i tarcze ostrzegawcze nie podaja wszystkich mozliwych sygnalow. Przykladowo: tarcza ostrzegawcza z jednym swiatlem pomaranczowym nie obsluguje sygnalow Os2 (zielone) i Os3 (zielone migajace). 
+Nalezy miec to na wzgledzie przy uzywaniu tych obiektow (np. ww. rodzaj tarczy nalezy umieszczac tylko przed semaforem z zaznaczona opcja "Zawsze ograniczenie"). 
+
+7. Semafory z pasem swietlnym podaja zawsze ograniczenie predkosci do 100 lub 60 km/h. NIE JEST mozliwe ustawienie dwoch oddzielnych kierunkow, tak aby np. jazda w jednym odbywala sie z predkoscia 40 km/h a w drugim 100 km/h.
+
+8. Semafory trojkomorowe o ukladzie swiatel zielone + czerwone + pomaranczowe moga byc dwojakiego rodzaju:
+
+- wyswietlajace sygnaly: S1, S2, S3, S10, S11;
+- wyswietlajace sygnaly: S1, S2, S3, S4, S5.
+
+Pierwszy rodzaj stosowany jest np. jako semafor wyjazdowy z bocznego toru na szlak bez blokady SBL. Pomaranczowe swiatlo sluzy wtedy do podawania sygnalu S10. Drugi rodzaj to np. semafor wyjazdowy "na wprost" na szlak z blokada SBL. Pomaranczowe swiatlo sluzy wtedy do informowania o sygnale nastepnego semafora. 
+
+Podobnie jak w rzeczywistosci, semafor o takim ukladzie swiatel nie moze miec mozliwosci wyswietlania zarowno S5 jak S10. Stad tez w pakiecie wystepuja dwa rodzaje semaforow o takim ukladzie swiatel. W Route Editor zostaly one umownie rozroznione podanym w nawiasie wyswietlanym sygnalem: S5 lub S10.
+
+Analogiczna sytuacja tyczy sie semaforow czterokomorowych o ukladzie swiatel zielone+ czerwone + pomaranczowe + biale.
+
+9. Slupki kilometrowe pozornie wystepuja w dwoch wersjach, pod dwoma roznymi nazwami. Ich wyglad jak i dzialanie jest identyczne, rozwiazanie takie jest spowodowane koniecznoscia zdefniowania obiektu "Milepost" dla kazdego rodzaju ograniczen.
+
+10. Umieszczajac wskazniki w8 i w27 nalezy zaznaczyc w nich opcje "Show number instead of speed" i wpisac odpowiednia liczbe.
+
+11. MSTS pozwala na jedna, ustalona predkosc ograniczen czasowych dla danej trasy. Domyslnie system przystosowany jest do ograniczenia do 30 km/h, ale w pakiecie sa przygotowane modele sygnalu d6 dla innych predkosci. Aby dostosowac system do innej predkosci nalezy zmienic nazwe modelu d6_3.s  w pliku speedpost.dat na nazwe innego modelu dostepnego w pakiecie. Np. aby bylo to 40 km/h nalezy wpisac tam model d6_4.s
+
+12. Bramki trakcyjne przystosowane do automatycznego rozmieszczania sa dostosowane do 2-8 torow biegnacych "na styk" obok siebie. W wypadku torow znajdujacych sie w pewnej odleglosci od siebie zalecam wykasowanie zle umieszczonych bramek oraz umieszczenie ich recznie. W tym celu nalezy wybrac stosowne obiekty z grupy "Trakcja", umieszczajac oddzielnie bramke trakcyjna i oddzielnie wysiegniki. 
+
+______________________________________________________________
+
+ZAUWAZONE PROBLEMY:
+
+1. Wystepuja bledy w dzialaniu ograniczen predkosci semafora, ktory jest ostatnim semaforem na trasie naszego przejazdu (przed koncem torow). Prawdopodobnie wina lezy po stronie MSTS. Aby uniknac problemow, nalezy na koncach torow stosowac sygnaly zamkniecia toru.
+2. Nie jest gwarantowane poprawne dzialanie sygnalizacji po zainstalowaniu jej na trasie, w ktorej zainstalowano uprzednio wczesniejsza wersje pakietu.
+3. Nie sa na razie poprawnie obslugiwane wskazniki, ktorych zaswiecenie sie jest zsynchronizowane z sygnalem na semaforze (w22, w24, 26a/b). 
+4. Wystepuja problemy z animacja sygnalizacji ksztaltowej (zacina sie w poczatkowej pozycji). Wydaje sie, ze przyjete rozwiazania eliminuja problem przy graniu w Activities (wystepuje tylko w Explore Route).
+
+______________________________________________________________
+
+PODZIEKOWANIA:
+
+- Dziekuje wszystkim dyskutantom z grupy pl.misc.kolej, ktorzy pomagali mi poszerzyc wiedze o sygnalizacji na PKP. Na szczegolne podziekowania zaluguje tu kolega Piotr Peszek.
+
+- Korzystalem z informacji zawartych na stronie Radka Bacha: 
+http://www.kolej.pl/~rbach/,
+ktora okazala sie przebogatym zrodlem wiedzy.
+
+- Dziekuje koledze Maciejowi Stefanowi Michalowiczowi ("Goretti") za szczegolowe testowanie sygnalizacji.
+
+Autor.
+_____________________________________________________________
+
+Wdzieczny bede za wszelkie uwagi dotyczace tego systemu sygnalizacji. Prosze je przeslac na adres mkysiak@poczta.onet.pl. Zycze przyjemnej zabawy i owocnego tworzenia tras.
+______________________________________________________________

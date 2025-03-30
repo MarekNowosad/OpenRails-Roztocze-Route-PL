@@ -1,0 +1,70 @@
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W1w.s")
+Align ("None")
+Description ("W1 wiszacy")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W1.s")
+Align ("None")
+Description ("W1")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W5.s")
+Align ("None")
+Description ("W5")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W18.s")
+Align ("None")
+Description ("W18")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W19.s")
+Align ("None")
+Description ("W19")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W20.s")
+Align ("None")
+Description ("W20")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_W22.s")
+Align ("None")
+Description ("W22")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_tab_powt1.s")
+Align ("None")
+Description ("I Sp")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_tab_powt2.s")
+Align ("None")
+Description ("II Sp")
+)
+
+Static (
+Class ("Wskazniki dot. Sygnalizatorow")
+Filename ("PLK_tab_powt3.s")
+Align ("None")
+Description ("III Sp")
+)

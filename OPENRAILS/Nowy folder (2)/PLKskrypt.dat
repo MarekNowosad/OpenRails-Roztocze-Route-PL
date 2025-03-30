@@ -1,0 +1,1410 @@
+/*
+
+	Skrypt sygnalizacji PLK w wersji 1.4e
+	Autor: Arkadiusz Susło
+
+	15.10.2017
+
+*/
+
+
+
+////////////////////////////////////////////////////////////////////
+//				KSZTAŁTOWE
+//
+//////////////////////////////////////////////////////////////////
+
+SCRIPT PLK_M1C	//semafor kształtowy jednoramienny 8m
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	enabled;
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	extern float	sig_feature ();
+	float	nast_man;
+
+	nast_man = next_sig_mr (SIGFN_SHUNTING);
+if (!enabled || block_state() !=# BLOCK_CLEAR || (sig_feature(SIGFEAT_USER4) && next_sig_mr (SIGFN_NORMAL) ==# 0))	//przebieg nieustawiony/blok zajęty/W5 pokazuje zajętość i to jest sem. wyjazdowy
+{
+	state = SIGASP_STOP;	
+}
+else	//droga wolna
+{
+	if (next_sig_mr (SIGFN_SHUNTING) ==# 0)	//przebieg manewrowy
+	{
+		state = SIGASP_RESTRICTING;	//S1, ale można jechać
+	}
+	else
+	{
+		state = SIGASP_CLEAR_2;
+	}
+	//zastępczy
+	if ((sig_feature(SIGFEAT_NUMBER_PLATE)) && (	//możliwość Sz
+	(sig_feature (SIGFEAT_USER1) || next_sig_mr (SIGFN_REPEATER) ==# 1) ||	//zawsze Sz/wyzwalacz Sz
+	(nast_man ==# 1 && sig_feature (SIGFEAT_USER2)) ||	//Sz na niewłaściwy i ustawiony tor niewłaściwy
+	(nast_man ==# 0 && !sig_feature (SIGFEAT_USER4))))	//przebieg manewrowy i wjazdowy
+	{state = SIGASP_STOP_AND_PROCEED;}	//Sz
+}
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_M2C	//semafor kształtowy dwuramienny 8m
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast_man;
+
+	nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (sig_feature(SIGFEAT_USER4) && next_sig_mr (SIGFN_NORMAL) ==# 0))	//przebieg nieustawiony/blok zajęty/W5 pokazuje zajętość i to jest wyjazdowy
+{
+	state = SIGASP_STOP;	
+}
+else	//droga wolna
+{
+	if (nast_man ==# 0)	//przebieg manewrowy
+	{
+		state = SIGASP_RESTRICTING;	//Sr1, ale można jechać
+	}
+	else
+	{
+		if ((sig_feature(SIGFEAT_USER2) && route_set()) || sig_feature(SIGFEAT_USER3))	//przebieg na Vmax albo zawsze Vmax
+		{
+			state = SIGASP_CLEAR_2;	//Sr2
+		}
+		else	//przebieg na V40/zawsze V40
+		{
+			state = SIGASP_APPROACH_1;	//Sr3
+		}
+	}
+	//zastępczy
+	if ((sig_feature(SIGFEAT_NUMBER_PLATE)) && (	//możliwość Sz
+	(sig_feature (SIGFEAT_USER1) || next_sig_mr (SIGFN_REPEATER) ==# 1) ||	//zawsze Sz/wyzwalacz Sz
+	(nast_man ==# 1 && sig_feature (SIGFEAT_GRADIENT_PLATE)) ||	//Sz na niewłaściwy i ustawiony tor niewłaściwy
+	(nast_man ==# 0 && !sig_feature (SIGFEAT_USER4))))	//przebieg manewrowy i wjazdowy
+	{state = SIGASP_STOP_AND_PROCEED;}	//Sz
+}
+draw_state = def_draw_state(state);
+
+SCRIPT PLK_M2A	//semafor kształtowy dwuramienny 10m
+//jak wyżej
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	enabled;
+	extern float	sig_feature ();
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast_man;
+
+	nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (sig_feature(SIGFEAT_USER4) && next_sig_mr (SIGFN_NORMAL) ==# 0))
+{
+	state = SIGASP_STOP;	
+}
+else
+{
+	if (next_sig_mr (SIGFN_SHUNTING) ==# 0)
+	{
+		state = SIGASP_RESTRICTING;
+	}
+	else
+	{
+		if ((sig_feature(SIGFEAT_USER2) && route_set()) || sig_feature(SIGFEAT_USER3))
+		{
+			state = SIGASP_CLEAR_2;
+		}
+		else
+		{
+			state = SIGASP_APPROACH_1;
+		}
+	}
+	if ((sig_feature(SIGFEAT_NUMBER_PLATE)) && (
+	(sig_feature (SIGFEAT_USER1) || next_sig_mr (SIGFN_REPEATER) ==# 1) ||
+	(nast_man ==# 1 && sig_feature (SIGFEAT_GRADIENT_PLATE)) ||
+	(nast_man ==# 0 && !sig_feature (SIGFEAT_USER4))))
+	{state = SIGASP_STOP_AND_PROCEED;}
+}
+
+draw_state = def_draw_state(state);
+
+SCRIPT PLK_MTM		//Tm kształtowa
+//skrypt ten sam co w normalnej tarczy
+
+	extern float	next_sig_mr ();
+	extern float	opp_sig_lr ();
+	extern float	block_state ();
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	float		nast_norm;
+	float		nast_man;
+	float		stan;
+
+nast_norm = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+stan = draw_state;
+
+if ((!enabled) || (block_state() !=# BLOCK_CLEAR && sig_feature (SIGFEAT_USER2)))
+{
+	state = SIGASP_STOP;
+	stan = 0;
+}
+else
+{
+	if ((nast_man ==# 0 && nast_norm ==# 2 && block_state () ==# BLOCK_CLEAR)
+	||	(nast_man ==# 0 && nast_norm ==# 0 && block_state () ==# BLOCK_OCCUPIED)
+	||	(nast_man ==# 0 && opp_sig_lr (SIGFN_SHUNTING) ==# 0 && stan != 1)
+	||	(sig_feature (SIGFEAT_USER1)))
+	{
+			state = SIGASP_RESTRICTING;
+			stan = 2;
+	}
+	else
+	{
+		state = nast_norm;
+		stan = 1;
+		if (nast_norm ==# 0 || nast_norm ==# 2)
+		{
+			state = SIGASP_STOP_AND_PROCEED;
+		}
+	}
+
+}
+draw_state = def_draw_state (state);
+draw_state = stan;
+
+SCRIPT PLK_MTO2		//Tarcza ostrzegawcza kształtowa dwustawna
+
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+
+if (next_sig_mr (SIGFN_NORMAL) <=# 2 || (sig_feature(SIGFEAT_USER2) && !route_set()))	//następny to co najwyżej Ms2
+{state = 0;}	//Od1
+else
+{state = 1;}	//Od2
+
+draw_state = state;
+
+SCRIPT PLK_MTO3		//Tarcza ostrzegawcza kształtowa trzystawna
+
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+	extern float	sig_feature();
+	extern float	route_set();
+	float		nast;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+
+//to tak troszkę dziwacznie, bo można go postawić nawet przed świetlnym ;)
+if (nast <=# 2 || (sig_feature(SIGFEAT_USER2) && !route_set()))	//następny to co najwyżej Ms2
+{
+	state = 0;	//Ot1
+}
+else if (nast >=# 6)	//S2/S3
+{
+	state = 1;//Ot2
+}	
+else
+{
+	state = 2;	//Ot3
+}
+draw_state = state;
+
+//////////////////////////////////////////////////////////////////
+//			SEMAFORY 2-KOMOROWE
+
+////////////////////////////////////////////////////////////////
+SCRIPT PLK_2k_C	//semafor dwukomorowy wyjazdowy c+b
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	enabled;
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || next_sig_mr (SIGFN_NORMAL) ==# 0)	//przebieg nieustawiony/blok zajęty/w5 pokazuje zajętość
+{state = SIGASP_STOP;}	//S1
+else
+{
+	state = SIGASP_CLEAR_2;
+}
+if (enabled && next_sig_mr (SIGFN_SHUNTING) ==# 0 && block_state() ==# BLOCK_CLEAR)	//przebieg manewrowy ustawiony,blok niezajęty
+{state = SIGASP_RESTRICTING;} //Ms2 (tutaj S1 z możliwością jazdy dalej)
+
+draw_state = def_draw_state (state);
+
+//////////////////////////////////////////////////////////////////
+//			SEMAFORY 3-KOMOROWE
+
+////////////////////////////////////////////////////////////////
+SCRIPT PLK_3kBC-zcb	//3k drogowskazowy/wyjazdowy ziel-czerw-bial
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || nast ==# 0)	//przebieg nieustawiony/blok zajęty/w5 pokazuje zajętość (następny to S1)
+{state = SIGASP_STOP;}	//S1
+
+else
+{
+	if (nast ==# 6)	//następny to V100
+	{
+		state = SIGASP_CLEAR_1;	//S3
+	}
+	else if (nast ==# 7)	//następny to Vmax
+	{
+		state = SIGASP_CLEAR_2;	//S2
+	}
+	else	//sygnał, którego nie może pokazać
+	{
+		state = SIGASP_STOP_AND_PROCEED;	//zastępczy
+	}
+
+//zastępczy
+if (sig_feature (SIGFEAT_USER1) || next_sig_mr (SIGFN_REPEATER) ==# 1 ||	//zawsze Sz/wyzwalacz Sz
+(nast_man ==# 1 && sig_feature (SIGFEAT_USER2)))	//Sz na niewłaściwy i ustawiony tor niewłaściwy
+{state = SIGASP_STOP_AND_PROCEED;}	//Sz
+}
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)	//przebieg manewrowy ustawiony,blok niezajęty
+{state = SIGASP_RESTRICTING;} //Ms2
+
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_3kBC-czb	//3k czerw-ziel-bial -- skrypt taki sam, jak wyżej
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || nast ==# 0)
+{state = SIGASP_STOP;}
+
+else
+{
+	if (nast ==# 6)
+	{
+		state = SIGASP_CLEAR_1;
+	}
+	else if (nast ==# 7)
+	{
+		state = SIGASP_CLEAR_2;
+	}
+	else	//sygnał, którego nie może pokazać
+	{
+		state = SIGASP_STOP_AND_PROCEED;
+	}
+
+if (sig_feature (SIGFEAT_USER1) || next_sig_mr (SIGFN_REPEATER) ==# 1 ||
+(nast_man ==# 1 && sig_feature (SIGFEAT_USER2)))
+{state = SIGASP_STOP_AND_PROCEED;}
+}
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)
+{state = SIGASP_RESTRICTING;}
+
+draw_state = def_draw_state (state);
+
+///////////////////////////////////////////////////////////////////
+//			SEMAFORY 4-KOMOROWE
+//
+//////////////////////////////////////////////////////////////////
+SCRIPT PLK_4kAB-pcpb	//4k wjazdowy/drogowskazowy pom+czerw+pom+bial
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+	float	sygnal;
+	
+nast = next_sig_mr (SIGFN_NORMAL);	
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR ||	//przebieg nieustawiony/blok zajęty
+	(sig_feature (SIGFEAT_NUMBER_PLATE) && nast ==# 0))
+{state = SIGASP_STOP; sygnal = 0;}
+
+else	//możemy jechać
+{
+if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//przebieg na link/zawsze Vmax
+{
+state = SIGASP_CLEAR_2;		//Vmax
+//wyświetlamy następny sygnał
+if (nast <=# 2)	//następny to max Ms2
+{sygnal = 3;}	//S5
+else	//następny to v40-vmax
+{sygnal = 2;}	//S4
+}
+else	//przebieg nie na link albo opcja nie zaznaczona (zawsze V40)
+{
+state = SIGASP_APPROACH_1;	//V40
+//opis jak wyżej
+if (nast <=# 2)
+{sygnal = 5;}	//S13
+else
+{sygnal = 4;}	//S12
+}
+//zastępczy
+if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1 || (next_sig_mr (SIGFN_SHUNTING) ==# 0 && nast ># 1))	//zawsze Sz/wyzwalacz Sz/przebieg na wyzwalacz manewrowy i nast. to nie Sz/S1 (czyli od razu przebieg manewrowy)
+{state = SIGASP_STOP_AND_PROCEED; sygnal = 1;}
+}
+//jeszcze manewry
+if (sig_feature (SIGFEAT_USER4))	//drogowskazowy (można Ms2)
+{
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)	//przebieg manewrowy ustawiony,blok niezajęty
+{state = SIGASP_RESTRICTING; sygnal = 10;} //Ms2
+}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+SCRIPT PLK_4kBC-zcpb		//4k drogowskazowy/wyjazdowy-komory zielona, czerwona, pomarańczowa i biała
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+	float	sygnal;
+
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+nast = next_sig_mr (SIGFN_NORMAL);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (sig_feature (SIGFEAT_NUMBER_PLATE) && next_sig_mr (SIGFN_NORMAL) ==# 0))	//przebieg nieustawiony/blok zajęty/następny to stop i kolejność ustawiania
+{
+	state = SIGASP_STOP;
+	sygnal = 0;
+}
+else	//jazda dozwolona
+{
+if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//przebieg na link/zawsze Vmax
+{
+	state = SIGASP_CLEAR_2;	//vmax
+
+	if (nast <=# 2)	//max Ms2
+	{
+		sygnal = 7;	//S5
+	}
+	else if (nast ==# 3 || nast ==# 4)	//40/60
+	{
+		sygnal = 6;	//S4
+	}
+	else if (nast ==# 5)	//100
+	{
+		state = SIGASP_CLEAR_1;	//max 160
+		sygnal = 5;	//S3
+	}
+	else	//160/Vmax
+	{
+		sygnal = 2;
+	}
+}
+else	//poza linkiem albo zawsze V40
+{
+	state = SIGASP_APPROACH_1;	//V40
+
+	if (nast >=# 6)	//Vmax
+	{
+		sygnal = 3; //S10
+	}
+	else if (nast ==# 5)	//V100
+	{
+		sygnal = 8;	//S11
+	}
+	//innych pokazać nie możemy, więc nie sprawdzamy
+}
+//zastępczy
+if  (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1	|| //zawsze Sz/przebieg na wyzwalacz Sz
+	(sig_feature (SIGFEAT_USER4) && nast_man ==# 1) ||	//Sz na niewłaściwy i wyzwalacz W24
+	!sygnal)	//nieustawiona zmienna "sygnal" - wcześniej nie mogliśmy podać odpowiedniego sygnału
+{
+	state = SIGASP_STOP_AND_PROCEED; //Sz
+	sygnal = 1;
+}
+
+}
+
+//manewry
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)	//przebieg manewrowy ustawiony,blok nie-zajęty
+{
+	state = SIGASP_RESTRICTING;
+	sygnal = 4;	//Ms2
+}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+SCRIPT PLK_4kAB-pcpb+pas	//4k wjazdowy/drogowskazowy pom+czerw+pom+bial + pas świetlny
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+	float	sygnal;
+	float	nast_pas;
+	float	jakipas;
+
+nast = next_sig_mr (SIGFN_NORMAL);	
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+nast_pas = next_sig_mr (SIGFN_REPEATER);
+jakipas = sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR ||
+	(sig_feature (SIGFEAT_NUMBER_PLATE) && nast ==# 0))	//S1
+{
+	state = SIGASP_STOP; sygnal = 0;
+}
+
+else
+{
+	if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//vmax
+	{
+		state = SIGASP_CLEAR_2;
+		if (nast <=# 2)	//S5
+		{
+			sygnal = 3;
+		}
+		else	//S4
+		{
+			sygnal = 2;
+		}
+	}
+	else	//ograniczenie
+	{
+		if (nast_pas ==# 6 && !jakipas)	//pas zielony
+		{
+			state = SIGASP_APPROACH_3;
+		}
+		else if (nast_pas ==# 3 && jakipas)	//pas pomarańczowy
+		{
+			state = SIGASP_APPROACH_2;
+		}
+		else	//bez pasa
+		{
+			state = SIGASP_APPROACH_1;
+		}
+		
+		if (nast <=# 2)	//S13/S13a/S9
+		{
+			sygnal = 5;
+		}
+		else	//S12/S12a/S8
+		{
+			sygnal = 4;
+		}
+	}
+
+	if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1 || (nast_man ==# 0 && nast ># 1))	//zastępczy
+	{
+		state = SIGASP_STOP_AND_PROCEED; sygnal = 1;
+	}
+}
+//jeszcze manewry
+
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR && sig_feature (SIGFEAT_USER4))	//manewry
+{
+	state = SIGASP_RESTRICTING; sygnal = 10;
+}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+SCRIPT PLK_4kBC-zcpb+pas		//4k wyjazdowy-komory zielona, czerwona, pomarańczowa i biała + pas
+//opis podobny jak w semaforze bez pasa
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast_man;
+	float	nast_pas;
+	float	nast;
+	float	sygnal;
+	float	jakipas;
+
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+nast_pas = next_sig_mr (SIGFN_REPEATER);
+nast = next_sig_mr (SIGFN_NORMAL);
+jakipas = sig_feature (SIGFEAT_NUMBER_PLATE);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (sig_feature (SIGFEAT_GRADIENT_PLATE) && next_sig_mr (SIGFN_NORMAL) ==# 0))	//S1
+{
+	state = SIGASP_STOP;
+	sygnal = 0;
+}
+else
+{
+	if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//vmax
+	{
+		state = SIGASP_CLEAR_2;
+		//następny:
+		if (nast <=# 2)	//max Ms2
+		{
+			sygnal = 7;	//S5
+		}
+		else if (nast ==# 3 || nast ==# 4)	//40/60
+		{
+			sygnal = 6;	//S4
+		}
+		else if (nast ==# 5)	//100
+		{
+			state = SIGASP_CLEAR_1;	//max 160
+			sygnal = 5;	//S3
+		}
+		else	//160/Vmax
+		{
+			sygnal = 2;
+		}
+	}
+	else
+	{
+		if (nast_pas ==# 6 && !jakipas)	//pas zielony
+		{
+			state = SIGASP_APPROACH_3;	//S6
+		}
+		else if (nast_pas ==# 3 && jakipas)	//pas pomarańczowy
+		{
+			state = SIGASP_APPROACH_2;	//S10a
+		}
+		else	//v40
+		{
+			state = SIGASP_APPROACH_1;//S10
+		}
+		//następny:
+		if (nast >=# 6)	//Vmax
+		{
+			sygnal = 3; //S6/S10a/S10
+		}
+		else if (nast ==# 5)	//V100
+		{
+			sygnal = 8;	//S7/S11a/S11
+		}
+		//innych pokazać nie możemy, więc nie sprawdzamy
+	}
+
+	if 	(sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1	||	//zastępczy
+		(sig_feature (SIGFEAT_USER4) && nast_man ==# 1) || !sygnal)
+	{
+		state = SIGASP_STOP_AND_PROCEED;
+		sygnal = 1;
+	}
+}
+
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)	//manewry
+{
+	state = SIGASP_RESTRICTING;
+	sygnal = 4;
+}
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+/////////////////////////////////////////////////////////////////////
+//
+//		SEMAFOR 4-KOMOROWY WYJAZDOWY GRUPOWY NA SZLAK SBL
+
+SCRIPT PLK_4kG
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state();
+	extern float	enabled;
+	extern float	block_state();
+	extern float	sig_feature();
+	extern float	next_sig_mr();
+	float	nast;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+
+if (enabled && block_state() ==# BLOCK_CLEAR)	//blok wolny,przebieg ustawiony
+{
+	if (nast ==# 6 || nast ==# 7)	//przy następnym S2/S3
+	{
+		state = SIGASP_CLEAR_2;	//Vmax-S2
+	}
+	else if (nast ==# 5)	//następny to S4/S5
+	{
+		if (sig_feature(SIGFEAT_USER1))	//czterostawna
+		{
+			state = SIGASP_CLEAR_1;	//S3
+		}
+		else	//trzystawna
+		{
+			state = SIGASP_CLEAR_2;	//Vmax-S2
+		}
+	}
+	else if (nast ==# 1)	//przy następnym S1
+	{
+		state = SIGASP_APPROACH_3;	//V100-S5
+	}
+	else if (sig_feature(SIGFEAT_USER3))	//zastępczy
+	{
+		state = SIGASP_STOP_AND_PROCEED;
+	}
+	else
+	{
+		state = SIGASP_STOP;
+	}
+}
+else	//przebieg nieustawiony albo blok zajęty
+{
+	state = SIGASP_STOP;
+}
+
+if (!enabled && block_state() ==# BLOCK_CLEAR)	//manewry
+{
+	state = SIGASP_RESTRICTING;
+}
+draw_state = def_draw_state (state);
+
+////////////////////////////////////////////////////////////////////
+//			SEMAFORY 5-KOMOROWE
+//	zwykłe
+//////////////////////////////////////////////////////////////////
+SCRIPT PLK_5kA	//5-kom wjazdowy
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	sygnal;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR)	//przebieg nieustawiony/blok zajęty
+{state = SIGASP_STOP; sygnal = 0;}
+
+else	//można jechać
+{
+if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//przebieg na link/zawsze Vmax
+{
+state = SIGASP_CLEAR_2;		//Vmax
+//wyświetlamy następny sygnał
+if (nast >=# 6)	//następny to Vmax
+{sygnal = 2;}	//S2
+else if (nast ==# 5)	//następny to V100
+{state = SIGASP_CLEAR_1; sygnal = 3;}	//S3
+else if (nast ==# 3 || nast ==# 4)	//następny to V40/V60
+{sygnal = 4;}	//S4
+else
+{sygnal = 5;}	//S5
+}
+
+else	//przebieg nie na link albo opcja nie zaznaczona (zawsze V40)
+{
+state = SIGASP_APPROACH_1;	//v40
+
+//opis jak wyżej
+if (nast >=# 6)
+{sygnal = 6;}	//S10
+else if (nast ==# 5)
+{sygnal = 7;}	//S11
+else if (nast ==# 3 || nast ==# 4)
+{sygnal = 8;}	//S12
+else
+{sygnal = 9;}	//S13
+}
+
+//ewentualnie wyświetlamy zastępczy
+if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1 || (next_sig_mr (SIGFN_SHUNTING) ==# 0 && nast ># 1))	//zawsze Sz/wyzwalacz Sz/przebieg na wyzwalacz manewrowy i nast. to nie Sz/S1 (czyli od razu przebieg manewrowy)
+{state = SIGASP_STOP_AND_PROCEED; sygnal = 1;}	//Sz
+}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+SCRIPT PLK_5kBC		//5-kom drogowskazowy/wyjazdowy
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+	float	sygnal;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR	//przebieg nieustawiony/blok zajęty
+|| (sig_feature (SIGFEAT_USER4) && nast ==# 0))	//to jest wyjazdowy(kol.ust.) i W5 pokazuje zajętość (następny to STOP)
+{state = SIGASP_STOP; sygnal = 0;}	//S1
+
+else	//można jechać
+{
+if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))	//przebieg na link/zawsze Vmax
+{
+state = SIGASP_CLEAR_2;		//Vmax
+//wyświetlamy następny sygnał
+if (nast >=# 6)	//następny to Vmax
+{sygnal = 2;}	//S2
+else if (nast ==# 5)	//następny to V100
+{state = SIGASP_CLEAR_1; sygnal = 3;}	//S3
+else if (nast ==# 4 || nast ==# 3)	//następny to V40/V60
+{sygnal = 4;}	//S4
+else
+{sygnal = 5;}	//S5
+}
+
+else	//przebieg nie na link,albo zawsze V40
+{
+state = SIGASP_APPROACH_1;	//V40
+//opis jak wyżej
+if (nast >=# 6)
+{sygnal = 6;}	//S10
+else if (nast ==# 5)
+{state = SIGASP_CLEAR_1; sygnal = 7;}	//S11
+else if (nast ==# 4 || nast ==# 3)
+{sygnal = 8;}	//S12
+else
+{sygnal = 9;}	//S13
+}
+
+//ewentualnie zastępczy
+if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1	|| //zawsze Sz/przebieg na wyzwalacz Sz
+(sig_feature (SIGFEAT_NUMBER_PLATE) && nast_man ==# 1))	//Sz na niewłaściwy i wyzwalacz W24
+{state = SIGASP_STOP_AND_PROCEED; sygnal = 1;}	//Sz
+}
+
+//jeszcze manewry
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)	//przebieg manewrowy ustawiony,blok nie-zajęty
+{state = SIGASP_RESTRICTING; sygnal = 10;} //Ms2
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+////////////////////////////////////////////////////////////////////
+//			Semafory 5-kom
+//	z pasem świetlnym
+//////////////////////////////////////////////////////////////////
+//opisy tych semaforów zgodne są z opisami semaforów zwykłych, zaznaczone zostały jedynie różnice
+
+SCRIPT PLK_5kA+pas	//5-kom wjazdowy+pas świetlny
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_pas;
+	float	sygnal;
+	float	jakipas;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+nast_pas = next_sig_mr (SIGFN_REPEATER);
+jakipas = sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR)
+{state = SIGASP_STOP; sygnal = 0;}
+
+else
+{
+	if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))
+	{
+		state = SIGASP_CLEAR_2;
+
+		if (nast >=# 6)
+		{sygnal = 2;}
+		else if (nast ==# 5)
+		{state = SIGASP_CLEAR_1; sygnal = 3;}
+		else if (nast ==# 3 || nast ==# 4)
+		{sygnal = 4;}
+		else
+		{sygnal = 5;}
+	}
+
+	else
+	{
+		//!!	sprawdzamy, czy trzeba odpalić jakiś pas		!!
+		if (nast_pas ==# 6 && !jakipas)		//wyzwalacz każe zapalić pas zielony i ustawiliśmy taki pas w opcjach
+		{state = SIGASP_APPROACH_3;}	//czyli zapalamy
+		else if (nast_pas ==# 3 && jakipas)//to samo co wyżej
+		{state = SIGASP_APPROACH_2;}	//pomarańczowy
+		else	//nijak nie chcą nam się spełnić warunki
+		{state = SIGASP_APPROACH_1;}	//bez pasa
+
+		if (nast >=# 6)
+		{sygnal = 6;}	//S10	S10a	albo S6
+		else if (nast ==# 5)
+		{sygnal = 7;}
+		else if (nast ==# 3 || nast ==# 4)
+		{sygnal = 8;}
+		else
+		{sygnal = 9;}
+	}
+
+
+	if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1 || (next_sig_mr (SIGFN_SHUNTING) ==# 0 && nast ># 1))
+	{state = SIGASP_STOP_AND_PROCEED; sygnal = 1;}
+}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+SCRIPT PLK_5kBC+pas		//5-kom drogowskazowy/wyjazdowy z pasem
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	enabled;
+	extern float	route_set ();
+	extern float	next_sig_mr ();
+	extern float	block_state ();
+	float	nast;
+	float	nast_man;
+	float	nast_pas;	//ale natrzaskaliśmy zmiennych :P
+	float	sygnal;
+	float	jakipas;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+nast_pas = next_sig_mr (SIGFN_REPEATER);
+jakipas = sig_feature (SIGFEAT_GRADIENT_PLATE);
+
+if (!enabled || block_state() !=# BLOCK_CLEAR
+|| (sig_feature (SIGFEAT_USER4) && nast ==# 0))
+{state = SIGASP_STOP; sygnal = 0;}
+
+else
+{
+if ((sig_feature (SIGFEAT_USER1) && route_set ()) || sig_feature (SIGFEAT_USER2))
+{
+state = SIGASP_CLEAR_2;
+if (nast >=# 6)
+{sygnal = 2;}
+else if (nast ==# 5)
+{state = SIGASP_CLEAR_1; sygnal = 3;}
+else if (nast ==# 4 || nast ==# 3)
+{sygnal = 4;}
+else
+{sygnal = 5;}
+}
+
+else
+{
+//!!	sprawdzamy, czy trzeba odpalić jakiś pas		!!
+//opis tej sekcji jak w semaforze A
+if (nast_pas ==# 6 && !jakipas)
+{state = SIGASP_APPROACH_3;}
+else if (nast_pas ==# 3 && jakipas)
+{state = SIGASP_APPROACH_2;}
+else
+{state = SIGASP_APPROACH_1;}
+
+if (nast >=# 6)
+{sygnal = 6;}
+else if (nast ==# 5)
+{sygnal = 7;}
+else if (nast ==# 4 || nast ==# 3)
+{sygnal = 8;}
+else
+{sygnal = 9;}
+}
+
+if (sig_feature (SIGFEAT_USER3) || next_sig_mr (SIGFN_REPEATER) ==# 1 || (sig_feature (SIGFEAT_NUMBER_PLATE) && nast_man ==# 1))
+{state = SIGASP_STOP_AND_PROCEED; sygnal = 1;}
+}
+
+if (enabled && nast_man ==# 0 && block_state() ==# BLOCK_CLEAR)
+{state = SIGASP_RESTRICTING; sygnal = 10;}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+
+////////////////////////////////////////////////////////////////////
+//				TARCZE
+//
+//////////////////////////////////////////////////////////////////
+
+//						ZAPOROWE
+
+SCRIPT PLK_1k-S1		//Tz 1-kom,zawsze S1
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+
+state = SIGASP_STOP;
+
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_Tz2	//Tarcza zaporowa dwukomorowa
+
+	extern float	next_sig_mr ();
+ 	extern float	block_state ();
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	float		sygnal;
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (next_sig_mr (SIGFN_NORMAL) == 0 && sig_feature (SIGFEAT_USER1)))	//przebieg nieustawiony lub blok zajęty albo "wyjazdowy/kol.ust."  i następny to stop (ew. W5 wskazuje na zajętość szlaku)
+{
+	state = SIGASP_STOP;
+	sygnal = 0;
+}
+else
+{
+	state = SIGASP_STOP_AND_PROCEED;
+	if (sig_feature (SIGFEAT_USER2))	//tor grupowy, więc wyjazd na Sz bez komory czerwonej
+	{
+		sygnal = 1;
+	}
+	else
+	{
+		sygnal = 2;
+	}
+}
+if (enabled && next_sig_mr (SIGFN_SHUNTING) ==# 0 && block_state() ==# BLOCK_CLEAR)
+{state = SIGASP_RESTRICTING; sygnal = 3;}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+SCRIPT PLK_Tz2_K	//Tarcza zaporowa dwukomorowa karzełkowa
+
+	extern float	next_sig_mr ();
+ 	extern float	block_state ();
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	float		sygnal;
+
+if (!enabled || block_state() !=# BLOCK_CLEAR || (next_sig_mr (SIGFN_NORMAL) == 0 && sig_feature (SIGFEAT_USER1)))
+{
+	state = SIGASP_STOP;
+	sygnal = 0;
+}
+else
+{
+	state = SIGASP_STOP_AND_PROCEED;
+	if (sig_feature (SIGFEAT_USER2))
+	{
+		sygnal = 1;
+	}
+	else
+	{
+		sygnal = 2;
+	}
+}
+if (enabled && next_sig_mr (SIGFN_SHUNTING) ==# 0 && block_state() ==# BLOCK_CLEAR)
+{state = SIGASP_RESTRICTING; sygnal = 3;}
+
+draw_state = def_draw_state (state);
+draw_state = sygnal;
+
+////////////////////////////////////////////////
+//						MANEWROWE
+
+SCRIPT PLK_Tm
+//wartość draw_state jest zapamiętana razem z głowicą sygnałową (signal head), dla każdej z osobna
+
+	extern float	next_sig_mr ();
+	extern float	opp_sig_lr ();
+	extern float	block_state ();
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	float		nast_norm;
+	float		nast_man;
+	float		stan;
+
+nast_norm = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+stan = draw_state;
+
+if ((!enabled) || (block_state() !=# BLOCK_CLEAR && sig_feature (SIGFEAT_USER2)))	//przebieg nieustawiony albo blok zajęty i tylko, gdy tor wolny
+{
+	state = SIGASP_STOP;
+	stan = 0;
+}
+else
+{
+	if ((nast_man ==# 0 && nast_norm ==# 2 && block_state () ==# BLOCK_CLEAR)	//manewry na całego
+	||	(nast_man ==# 0 && nast_norm ==# 0 && block_state () ==# BLOCK_OCCUPIED)	//prawdopodobnie będziemy się podczepiać do składu
+	||	(nast_man ==# 0 && opp_sig_lr (SIGFN_SHUNTING) ==# 0 && stan != 1)	//jeśli jest manewrowy wyjazd na tor, na którym mamy STOP, to ten warunek pozwoli na Ms2, ale tylko jeśli to był przebieg manewrowy (opp)
+	||	(sig_feature (SIGFEAT_USER1)))	//zawsze Ms2
+	{	//ms2
+			state = SIGASP_RESTRICTING;
+			stan = 2;
+	}
+	else
+	{	//jazda pociągowa, tarcza niewidoczna
+		state = nast_norm;
+		stan = 1;	//jazda pociągowa, więc nie możemy podać Ms2 w tym przebiegu
+		if (nast_norm ==# 0 || nast_norm ==# 2)		//nie możemy podać ani STOP, ani manewrów
+		{
+			state = SIGASP_STOP_AND_PROCEED;
+		}
+	}
+
+}
+draw_state = def_draw_state (state);
+draw_state = stan;
+
+SCRIPT PLK_Tm_K		//Tm karzełkowa
+//skrypt ten sam, co w normalnej tarczy
+
+	extern float	next_sig_mr ();
+	extern float	opp_sig_lr ();
+	extern float	block_state ();
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	float		nast_norm;
+	float		nast_man;
+	float		stan;
+
+nast_norm = next_sig_mr (SIGFN_NORMAL);
+nast_man = next_sig_mr (SIGFN_SHUNTING);
+stan = draw_state;
+
+if ((!enabled) || (block_state() !=# BLOCK_CLEAR && sig_feature (SIGFEAT_USER2)))
+{
+	state = SIGASP_STOP;
+	stan = 0;
+}
+else
+{
+	if ((nast_man ==# 0 && nast_norm ==# 2 && block_state () ==# BLOCK_CLEAR)
+	||	(nast_man ==# 0 && nast_norm ==# 0 && block_state () ==# BLOCK_OCCUPIED)
+	||	(nast_man ==# 0 && opp_sig_lr (SIGFN_SHUNTING) ==# 0 && stan != 1)
+	||	(sig_feature (SIGFEAT_USER1)))
+	{
+			state = SIGASP_RESTRICTING;
+			stan = 2;
+	}
+	else
+	{
+		state = nast_norm;
+		stan = 1;
+		if (nast_norm ==# 0 || nast_norm ==# 2)
+		{
+			state = SIGASP_STOP_AND_PROCEED;
+		}
+	}
+
+}
+draw_state = def_draw_state (state);
+draw_state = stan;
+
+/////////////////////////////////////////////////
+//					OSTRZEGAWCZE
+
+SCRIPT PLK_To		//Tarcza ostrzegawcza
+
+	extern float	sig_feature();
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+	float		nast;
+	float 		przel;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+przel = sig_feature (SIGFEAT_USER1);
+
+if (przel)	//tarcza przelotowa
+{nast = next_sig_mr (SIGFN_INFO);}	//przyjmujemy wskazanie semafora dalszego
+
+if (nast <=# 2)	//następny to co najwyżej Ms2
+{state = 1;}	//Os1
+else if (nast ==# 3 || nast ==# 4 || !sig_feature (SIGFEAT_USER2))	//V40/V60/nie czterostawna
+{state = 4;}	//Os4
+else if (nast ==# 5)	//V100
+{state = 3;}	//Os3
+else if (nast >=# 6)	//S2/S3
+{state = 2;}	//Os2
+
+
+if (przel && next_sig_mr (SIGFN_NORMAL) ==# 0)	//jeśli to jest t.przelotowa, a bliższy sem pokazuje Sr1
+{state = 0;}	//wygaszamy
+
+draw_state = state;
+
+////////////////////////////////////////////////////////////////////
+//			Sygnalizatory powtarzające
+//
+
+SCRIPT PLK_Sp2		//Sp 2 komorowy
+
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+
+if (next_sig_mr(SIGFN_NORMAL) <=# 2)	//następny to co najwyżej Ms2
+{
+	state = 0;	//Sp1
+}
+else	//cokolwiek innego
+{
+	state = 1;	//Sp4
+}
+
+draw_state = state;
+
+SCRIPT PLK_Sp3	//trójkomorowy
+
+	extern float	sig_feature();
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+	float		nast;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+
+if (nast <=# 2)	//następny to co najwyżej Ms2
+{state = 0;}	//Sp1
+else if (nast ==# 3 || nast ==# 4 || !sig_feature (SIGFEAT_USER2))	//V40/V60/nie czterostawna
+{state = 3;}	//Sp4
+else if (nast ==# 5)	//V100
+{state = 2;}	//Sp3
+else if (nast >=# 6)	//S2/S3
+{state = 1;}	//Sp2
+
+draw_state = state;
+////////////////////////////////////////////////////////////////////
+//			SKRYPT SEMAFORÓW SBL
+//
+//////////////////////////////////////////////////////////////////
+SCRIPT PLK_SBL		//SBL
+
+	extern float	sig_feature();
+	extern float	next_sig_mr();
+	extern float	state;
+	extern float	draw_state;
+	extern float	enabled;
+	extern float	block_state();
+	float		nast;
+
+nast = next_sig_mr (SIGFN_NORMAL);
+
+if (!enabled && sig_feature(SIGFEAT_USER3))	//nie ma pociągu, użytkownik pozwala wygaszać
+{
+		state = SIGASP_STOP;	//wygaszony
+}
+else if (block_state() ==# BLOCK_OCCUPIED)	//jest pociąg na szlaku i/lub nie wygaszamy, szlak przed nim zajęty
+{
+	state = SIGASP_STOP_AND_PROCEED; 	//S1
+}
+else	//pociąg na szlaku i/lub nie wygaszamy, szlak wolny
+{
+	if (nast <=# 2)	//następny to co najwyżej Ms2 (zwykle S1)
+	{
+		state = SIGASP_APPROACH_3;	//S5
+	}
+	else if (nast ==# 3 || nast ==# 4)	//V40/60 (zdarzy się tylko w przypadku ostatniego SBL)
+	{
+		state = SIGASP_APPROACH_2;
+	}
+	else if (nast ==# 5)	//następny to S5
+	{
+		if (sig_feature(SIGFEAT_USER1))	//czterostawna
+		{
+			state = SIGASP_CLEAR_1;	//S3
+		}
+		else	//trzystawna
+		{
+			state = SIGASP_CLEAR_2;	//S2
+		}
+	}
+	else if (nast >=#6)	//następny to V160 lub Vmax
+	{
+		state = SIGASP_CLEAR_2;
+	}	
+}
+draw_state = def_draw_state(state);
+
+////////////////////////////////////////////////////////////////////
+//			WSKAŹNIKI
+//
+//////////////////////////////////////////////////////////////////
+
+SCRIPT PLK_W5		//część zasadnicza W5
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state();
+	extern float	enabled;
+	extern float	block_state();
+
+if (enabled && block_state() ==# BLOCK_CLEAR)	//blok wolny,przebieg ustawiony
+{
+	state = SIGASP_CLEAR_2;
+}
+else	//przebieg nieustawiony albo blok zajęty
+{
+	state = SIGASP_STOP;
+}
+
+if (!enabled && block_state() ==# BLOCK_CLEAR)	//manewry
+{
+	state = SIGASP_RESTRICTING;
+}
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_W5_2	//część W5 odpowiedzialna za wywołanie manewrów i uruchomienie W24
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+	extern float	this_sig_mr ();
+
+if (this_sig_mr (SIGFN_NORMAL) ==# 2)	//W5 pokazuje manewry
+{state = SIGASP_STOP;}
+else if (sig_feature (SIGFEAT_USER2))	//tor niewłaściwy
+{state = SIGASP_STOP_AND_PROCEED;}
+else
+{state = SIGASP_CLEAR_2;}		//normalny wyjazd,bez manewrów
+
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_W24	//wskaźnik W24
+
+	extern float	next_sig_lr ();
+	extern float	def_draw_state ();
+	extern float	state;
+	extern float	draw_state;
+	float		nast;
+
+nast = next_sig_lr (SIGFN_NORMAL);
+
+if ((nast !=# 0 || nast !=# 0) && next_sig_lr (SIGFN_SHUNTING) ==# 1)	//semafor nie pokazuje S1/Ms2 i mamy tor niewłaściwy na w5
+{state = 1;}	//lampa się zapala
+else
+{state = 0;}	//albo i nie
+
+draw_state = state;
+
+///////////////////////////////////////////////////////
+//				INNE
+//
+///////////////////////////////////////////////////////
+
+SCRIPT PLK_PAS	//pas świetlny
+//ten skrypt ma za zadanie tylko zapalić światło na pasie odpowiednio do semafora,
+//rozpoznawaniem, czy należy zapalić, zajmuje się skrypt semafora
+	extern float	state;
+	extern float	draw_state;
+	extern float	this_sig_mr ();
+	float	ten;
+
+ten = this_sig_mr (SIGFN_NORMAL);	//wskazanie semafora na którym jest pas
+
+if (ten ==# 4)	//pas pom
+{state = 0;}
+else if (ten ==# 5)	//pas ziel
+{state = 1;}
+else
+{state = 2;}	//bez pasa
+
+draw_state = state;
+
+
+SCRIPT PLK_W_V		//wyzwalacz prędkości i Sz
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	def_draw_state ();
+	extern float	sig_feature ();
+
+if (sig_feature (SIGFEAT_USER1))	//V60
+{state = SIGASP_APPROACH_1;}
+
+if (sig_feature (SIGFEAT_USER2))	//V100
+{state = SIGASP_CLEAR_1;}
+
+if (sig_feature (SIGFEAT_USER3))	//reset
+{state = SIGASP_STOP;}
+
+if (sig_feature (SIGFEAT_USER4))	//Sz
+{state = SIGASP_STOP_AND_PROCEED;}
+
+draw_state = def_draw_state (state);
+
+SCRIPT PLK_POWT	//powtarzacz następnego sygnału dla tarczy ostrzegawczej przelotowej (żeby nie pokazywała wskazania semafora, przy którym stoi)
+
+	extern float	state;
+	extern float	draw_state;
+	extern float	next_sig_mr ();
+
+state = next_sig_mr(SIGFN_NORMAL);
+
+draw_state = def_draw_state (state);
