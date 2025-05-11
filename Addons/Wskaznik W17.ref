@@ -1,0 +1,6 @@
+Static (
+    Class           ( "Wskazniki Drogowe" )
+    Filename        ( wskaznik_W17.S )
+    Align           ( None )
+    Description     ( "W17 - Wskaznik ukresu" )
+)

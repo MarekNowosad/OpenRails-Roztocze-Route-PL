@@ -1,0 +1,6 @@
+)
+Static (
+    Class           ( "Misc" )
+    Filename        ( KNGERWE.S )
+    Align           ( None )
+    Description     ( "W17 - Wskaznik ukresu" )
