@@ -1,0 +1,4786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Pochylenia LK72</name>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>0.423</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1289963<br>GIS_SZ: 50.7184675<br>WARTOSC_POCHYLENIA: 0,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1289963</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7184675</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1289963,50.7184675,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>0.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1302622<br>GIS_SZ: 50.7192368<br>WARTOSC_POCHYLENIA: 7,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1302622</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7192368</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>7.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1302622,50.7192368,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>0.775</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1329307<br>GIS_SZ: 50.7202698<br>WARTOSC_POCHYLENIA: 3,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1329307</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7202698</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1329307,50.7202698,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1.25</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1393157<br>GIS_SZ: 50.7190627<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1393157</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7190627</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1393157,50.7190627,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2.6</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1571465<br>GIS_SZ: 50.7146689<br>WARTOSC_POCHYLENIA: 0,3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1571465</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7146689</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.3</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1571465,50.7146689,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2.95</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1617628<br>GIS_SZ: 50.7135179<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1617628</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7135179</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1617628,50.7135179,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1722882<br>GIS_SZ: 50.7108847<br>WARTOSC_POCHYLENIA: -0,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1722882</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7108847</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1722882,50.7108847,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>04.05</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1758351<br>GIS_SZ: 50.7094844<br>WARTOSC_POCHYLENIA: -3,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1758351</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7094844</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1758351,50.7094844,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1784546<br>GIS_SZ: 50.7058876<br>WARTOSC_POCHYLENIA: -1,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1784546</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7058876</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1784546,50.7058876,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1838106<br>GIS_SZ: 50.7055969<br>WARTOSC_POCHYLENIA: -4,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1838106</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7055969</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1838106,50.7055969,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>5.725</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1953798<br>GIS_SZ: 50.7061844<br>WARTOSC_POCHYLENIA: -8,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1953798</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7061844</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-8.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1953798,50.7061844,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2154332<br>GIS_SZ: 50.7098749<br>WARTOSC_POCHYLENIA: -8,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2154332</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7098749</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-8.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2154332,50.7098749,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2195148<br>GIS_SZ: 50.7106257<br>WARTOSC_POCHYLENIA: -6,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2195148</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7106257</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2195148,50.7106257,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>08.05</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2269900<br>GIS_SZ: 50.7120207<br>WARTOSC_POCHYLENIA: -0,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2269900</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7120207</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.22699,50.7120207,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>1.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1465897<br>GIS_SZ: 50.7172886<br>WARTOSC_POCHYLENIA: -7,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1465897</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7172886</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1465897,50.7172886,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1545090<br>GIS_SZ: 50.7153272<br>WARTOSC_POCHYLENIA: -3,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1545090</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7153272</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.154509,50.7153272,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>6</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1991182<br>GIS_SZ: 50.7068721<br>WARTOSC_POCHYLENIA: -7,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1991182</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7068721</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1991182,50.7068721,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1505534<br>GIS_SZ: 50.7163146<br>WARTOSC_POCHYLENIA: -9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1505534</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7163146</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-9.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1505534,50.7163146,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>5.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.1894183<br>GIS_SZ: 50.7059015<br>WARTOSC_POCHYLENIA: -1,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.1894183</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7059015</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.1894183,50.7059015,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8.425</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2320973<br>GIS_SZ: 50.7129760<br>WARTOSC_POCHYLENIA: 0,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2320973</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7129760</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2320973,50.712976,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2457189<br>GIS_SZ: 50.7137626<br>WARTOSC_POCHYLENIA: 4,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2457189</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7137626</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>4.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2457189,50.7137626,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2541188<br>GIS_SZ: 50.7146240<br>WARTOSC_POCHYLENIA: 8,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2541188</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7146240</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>8.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2541188,50.714624,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2582824<br>GIS_SZ: 50.7141402<br>WARTOSC_POCHYLENIA: 9,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2582824</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7141402</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>9.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2582824,50.7141402,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2609066<br>GIS_SZ: 50.7146311<br>WARTOSC_POCHYLENIA: 1,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2609066</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7146311</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2609066,50.7146311,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2637483<br>GIS_SZ: 50.7186611<br>WARTOSC_POCHYLENIA: 9,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2637483</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7186611</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>9.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2637483,50.7186611,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2654402<br>GIS_SZ: 50.7215172<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2654402</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7215172</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2654402,50.7215172,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2690375<br>GIS_SZ: 50.7242113<br>WARTOSC_POCHYLENIA: -0,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2690375</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7242113</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2690375,50.7242113,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>12.15</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2736939<br>GIS_SZ: 50.7231373<br>WARTOSC_POCHYLENIA: -1,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2736939</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7231373</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2736939,50.7231373,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>12.575</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2794474<br>GIS_SZ: 50.7222392<br>WARTOSC_POCHYLENIA: 6,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2794474</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7222392</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>6.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2794474,50.7222392,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>13.075</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2864777<br>GIS_SZ: 50.7227836<br>WARTOSC_POCHYLENIA: -1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2864777</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7227836</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2864777,50.7227836,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>13.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2910276<br>GIS_SZ: 50.7231335<br>WARTOSC_POCHYLENIA: 0,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2910276</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7231335</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2910276,50.7231335,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>13.95</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2982527<br>GIS_SZ: 50.7216706<br>WARTOSC_POCHYLENIA: 2,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2982527</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7216706</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2982527,50.7216706,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>14.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3105253<br>GIS_SZ: 50.7180740<br>WARTOSC_POCHYLENIA: 2,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3105253</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7180740</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3105253,50.718074,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>15.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3218319<br>GIS_SZ: 50.7179398<br>WARTOSC_POCHYLENIA: -4,3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3218319</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7179398</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.3</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3218319,50.7179398,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>16.125</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3278214<br>GIS_SZ: 50.7178821<br>WARTOSC_POCHYLENIA: -1,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3278214</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7178821</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3278214,50.7178821,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>16.6</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3344628<br>GIS_SZ: 50.7173724<br>WARTOSC_POCHYLENIA: -2,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3344628</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7173724</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3344628,50.7173724,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>17.225</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3431587<br>GIS_SZ: 50.7163610<br>WARTOSC_POCHYLENIA: 1,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3431587</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7163610</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3431587,50.716361,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>17.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3469923<br>GIS_SZ: 50.7159150<br>WARTOSC_POCHYLENIA: -3,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3469923</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7159150</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3469923,50.715915,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2499825<br>GIS_SZ: 50.7141206<br>WARTOSC_POCHYLENIA: 10,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2499825</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7141206</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>10.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2499825,50.7141206,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>11.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.2660014<br>GIS_SZ: 50.7232310<br>WARTOSC_POCHYLENIA: -5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.2660014</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7232310</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.2660014,50.723231,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>16.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3386293<br>GIS_SZ: 50.7168899<br>WARTOSC_POCHYLENIA: -1,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3386293</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7168899</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3386293,50.7168899,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>17.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3526403<br>GIS_SZ: 50.7152579<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3526403</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7152579</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3526403,50.7152579,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>18.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3554660<br>GIS_SZ: 50.7149291<br>WARTOSC_POCHYLENIA: 5,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3554660</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7149291</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.355466,50.7149291,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>18.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3582915<br>GIS_SZ: 50.7145999<br>WARTOSC_POCHYLENIA: -1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3582915</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7145999</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3582915,50.7145999,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>18.6</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3624693<br>GIS_SZ: 50.7141162<br>WARTOSC_POCHYLENIA: -0,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3624693</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7141162</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3624693,50.7141162,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>19.175</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3703100<br>GIS_SZ: 50.7131999<br>WARTOSC_POCHYLENIA: -3,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3703100</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7131999</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.37031,50.7131999,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>19.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3733841<br>GIS_SZ: 50.7128394<br>WARTOSC_POCHYLENIA: 2,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3733841</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7128394</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3733841,50.7128394,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>19.65</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3768754<br>GIS_SZ: 50.7124358<br>WARTOSC_POCHYLENIA: 0,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3768754</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7124358</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3768754,50.7124358,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>20.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3832433<br>GIS_SZ: 50.7121687<br>WARTOSC_POCHYLENIA: 1,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3832433</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7121687</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3832433,50.7121687,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>20.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3924597<br>GIS_SZ: 50.7119099<br>WARTOSC_POCHYLENIA: 1,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3924597</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7119099</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3924597,50.7119099,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>21.125</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.3977744<br>GIS_SZ: 50.7117594<br>WARTOSC_POCHYLENIA: -2,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.3977744</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7117594</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.3977744,50.7117594,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>21.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4009143<br>GIS_SZ: 50.7120159<br>WARTOSC_POCHYLENIA: -3,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4009143</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7120159</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4009143,50.7120159,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>21.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4054814<br>GIS_SZ: 50.7132523<br>WARTOSC_POCHYLENIA: 1,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4054814</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7132523</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4054814,50.7132523,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>22.05</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4100416<br>GIS_SZ: 50.7144998<br>WARTOSC_POCHYLENIA: -0,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4100416</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7144998</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4100416,50.7144998,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>22.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4133033<br>GIS_SZ: 50.7153932<br>WARTOSC_POCHYLENIA: 5,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4133033</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7153932</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4133033,50.7153932,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23.025</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4227588<br>GIS_SZ: 50.7179865<br>WARTOSC_POCHYLENIA: -2,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4227588</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7179865</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4227588,50.7179865,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4321831<br>GIS_SZ: 50.7205665<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4321831</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7205665</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4321831,50.7205665,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>24.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4406345<br>GIS_SZ: 50.7228813<br>WARTOSC_POCHYLENIA: 0,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4406345</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7228813</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4406345,50.7228813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>24.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4451810<br>GIS_SZ: 50.7241507<br>WARTOSC_POCHYLENIA: -1,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4451810</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7241507</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.445181,50.7241507,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4495344<br>GIS_SZ: 50.7256661<br>WARTOSC_POCHYLENIA: -7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4495344</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7256661</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4495344,50.7256661,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4516402<br>GIS_SZ: 50.7268583<br>WARTOSC_POCHYLENIA: -2,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4516402</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7268583</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4516402,50.7268583,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4534894<br>GIS_SZ: 50.7282150<br>WARTOSC_POCHYLENIA: 4,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4534894</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7282150</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>4.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4534894,50.728215,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4556206<br>GIS_SZ: 50.7293868<br>WARTOSC_POCHYLENIA: 1,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4556206</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7293868</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4556206,50.7293868,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>26.25</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4630096<br>GIS_SZ: 50.7306343<br>WARTOSC_POCHYLENIA: -0,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4630096</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7306343</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4630096,50.7306343,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>26.6</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4679639<br>GIS_SZ: 50.7307961<br>WARTOSC_POCHYLENIA: -1,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4679639</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7307961</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4679639,50.7307961,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>26.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4721348<br>GIS_SZ: 50.7313426<br>WARTOSC_POCHYLENIA: -6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4721348</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7313426</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4721348,50.7313426,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>27.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4805440<br>GIS_SZ: 50.7313343<br>WARTOSC_POCHYLENIA: -3,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4805440</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7313343</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.480544,50.7313343,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>27.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4847219<br>GIS_SZ: 50.7308556<br>WARTOSC_POCHYLENIA: -2,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4847219</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7308556</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4847219,50.7308556,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>28.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4902765<br>GIS_SZ: 50.7302157<br>WARTOSC_POCHYLENIA: -0,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4902765</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7302157</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4902765,50.7302157,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>28.475</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4941247<br>GIS_SZ: 50.7297781<br>WARTOSC_POCHYLENIA: -6,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4941247</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7297781</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4941247,50.7297781,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>29</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5014806<br>GIS_SZ: 50.7289579<br>WARTOSC_POCHYLENIA: -7,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5014806</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7289579</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5014806,50.7289579,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>30.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5166694<br>GIS_SZ: 50.7300806<br>WARTOSC_POCHYLENIA: -4,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5166694</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7300806</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5166694,50.7300806,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>30.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5226202<br>GIS_SZ: 50.7315144<br>WARTOSC_POCHYLENIA: 0,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5226202</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7315144</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5226202,50.7315144,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>30.85</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5268299<br>GIS_SZ: 50.7317245<br>WARTOSC_POCHYLENIA: 2,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5268299</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7317245</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5268299,50.7317245,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>31.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5331446<br>GIS_SZ: 50.7320281<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5331446</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7320281</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5331446,50.7320281,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>31.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5395068<br>GIS_SZ: 50.7323361<br>WARTOSC_POCHYLENIA: -3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5395068</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7323361</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5395068,50.7323361,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>32.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5479811<br>GIS_SZ: 50.7327444<br>WARTOSC_POCHYLENIA: 0,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5479811</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7327444</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5479811,50.7327444,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5571620<br>GIS_SZ: 50.7331840<br>WARTOSC_POCHYLENIA: 3,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5571620</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7331840</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.557162,50.733184,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5599869<br>GIS_SZ: 50.7333195<br>WARTOSC_POCHYLENIA: 5,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5599869</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7333195</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5599869,50.7333195,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5649327<br>GIS_SZ: 50.7335540<br>WARTOSC_POCHYLENIA: 1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5649327</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7335540</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5649327,50.733554,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>33.95</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5705570<br>GIS_SZ: 50.7340068<br>WARTOSC_POCHYLENIA: -5,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5705570</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7340068</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.570557,50.7340068,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>34.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5768736<br>GIS_SZ: 50.7345743<br>WARTOSC_POCHYLENIA: -3,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5768736</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7345743</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5768736,50.7345743,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>34.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5810841<br>GIS_SZ: 50.7349547<br>WARTOSC_POCHYLENIA: -5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5810841</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7349547</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5810841,50.7349547,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5853044<br>GIS_SZ: 50.7348358<br>WARTOSC_POCHYLENIA: -2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5853044</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7348358</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5853044,50.7348358,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>35.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5958195<br>GIS_SZ: 50.7321418<br>WARTOSC_POCHYLENIA: -0,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5958195</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7321418</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.5958195,50.7321418,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23.25</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4256835<br>GIS_SZ: 50.7187873<br>WARTOSC_POCHYLENIA: -4,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4256835</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7187873</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4256835,50.7187873,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>23.95</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4347831<br>GIS_SZ: 50.7212781<br>WARTOSC_POCHYLENIA: 2,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4347831</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7212781</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4347831,50.7212781,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>25.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.4581396<br>GIS_SZ: 50.7301899<br>WARTOSC_POCHYLENIA: 3,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.4581396</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7301899</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.4581396,50.7301899,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>36.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.5997410<br>GIS_SZ: 50.7311069<br>WARTOSC_POCHYLENIA: 0,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.5997410</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7311069</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.599741,50.7311069,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>36.675</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6072604<br>GIS_SZ: 50.7291260<br>WARTOSC_POCHYLENIA: 3,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6072604</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7291260</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6072604,50.729126,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>37.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6128190<br>GIS_SZ: 50.7276585<br>WARTOSC_POCHYLENIA: 0,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6128190</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7276585</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.612819,50.7276585,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>38.05</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6252535<br>GIS_SZ: 50.7243747<br>WARTOSC_POCHYLENIA: -2,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6252535</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7243747</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6252535,50.7243747,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>38.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6312671<br>GIS_SZ: 50.7230788<br>WARTOSC_POCHYLENIA: -1,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6312671</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7230788</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6312671,50.7230788,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>39.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6432833<br>GIS_SZ: 50.7226745<br>WARTOSC_POCHYLENIA: -2,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6432833</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7226745</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6432833,50.7226745,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>39.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6482335<br>GIS_SZ: 50.7225312<br>WARTOSC_POCHYLENIA: -5,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6482335</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7225312</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6482335,50.7225312,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>39.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6510597<br>GIS_SZ: 50.7224501<br>WARTOSC_POCHYLENIA: -4,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6510597</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7224501</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6510597,50.7224501,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6553052<br>GIS_SZ: 50.7223289<br>WARTOSC_POCHYLENIA: -2,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6553052</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7223289</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6553052,50.7223289,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40.4</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6581341<br>GIS_SZ: 50.7222705<br>WARTOSC_POCHYLENIA: -0,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6581341</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7222705</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6581341,50.7222705,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>40.725</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6625855<br>GIS_SZ: 50.7229202<br>WARTOSC_POCHYLENIA: -6,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6625855</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7229202</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6625855,50.7229202,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>41.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6687344<br>GIS_SZ: 50.7246626<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6687344</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7246626</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6687344,50.7246626,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>41.425</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6716743<br>GIS_SZ: 50.7254943<br>WARTOSC_POCHYLENIA: 4,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6716743</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7254943</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>4.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6716743,50.7254943,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>41.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6765221<br>GIS_SZ: 50.7268670<br>WARTOSC_POCHYLENIA: 3,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6765221</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7268670</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6765221,50.726867,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>42.625</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6868389<br>GIS_SZ: 50.7302465<br>WARTOSC_POCHYLENIA: -0,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6868389</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7302465</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6868389,50.7302465,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>43.125</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6916743<br>GIS_SZ: 50.7335316<br>WARTOSC_POCHYLENIA: -3,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6916743</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7335316</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6916743,50.7335316,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>43.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6961398<br>GIS_SZ: 50.7353658<br>WARTOSC_POCHYLENIA: -1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6961398</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7353658</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6961398,50.7353658,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>43.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.6991471<br>GIS_SZ: 50.7365543<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.6991471</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7365543</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.6991471,50.7365543,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>44.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7081699<br>GIS_SZ: 50.7401196<br>WARTOSC_POCHYLENIA: 0,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7081699</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7401196</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7081699,50.7401196,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>44.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7106983<br>GIS_SZ: 50.7409045<br>WARTOSC_POCHYLENIA: -5,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7106983</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7409045</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7106983,50.7409045,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>45.025</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7151696<br>GIS_SZ: 50.7412872<br>WARTOSC_POCHYLENIA: -2,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7151696</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7412872</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7151696,50.7412872,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>45.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7188927<br>GIS_SZ: 50.7407320<br>WARTOSC_POCHYLENIA: 1,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7188927</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7407320</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7188927,50.740732,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>45.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7252716<br>GIS_SZ: 50.7389131<br>WARTOSC_POCHYLENIA: 0,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7252716</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7389131</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7252716,50.7389131,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>47.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7465870<br>GIS_SZ: 50.7420177<br>WARTOSC_POCHYLENIA: -3,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7465870</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7420177</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.746587,50.7420177,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>48</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7522414<br>GIS_SZ: 50.7448369<br>WARTOSC_POCHYLENIA: -5,1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7522414</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7448369</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.1</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7522414,50.7448369,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>48.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7568655<br>GIS_SZ: 50.7460321<br>WARTOSC_POCHYLENIA: -0,3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7568655</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7460321</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.3</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7568655,50.7460321,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>48.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7646728<br>GIS_SZ: 50.7457263<br>WARTOSC_POCHYLENIA: -1,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7646728</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7457263</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7646728,50.7457263,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>49.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7703010<br>GIS_SZ: 50.7452486<br>WARTOSC_POCHYLENIA: 1,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7703010</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7452486</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.770301,50.7452486,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7799602<br>GIS_SZ: 50.7460122<br>WARTOSC_POCHYLENIA: 5,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7799602</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7460122</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7799602,50.7460122,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50.26</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7830826<br>GIS_SZ: 50.7472482<br>WARTOSC_POCHYLENIA: 4,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7830826</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7472482</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>4.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7830826,50.7472482,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50.46</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7849503<br>GIS_SZ: 50.7485957<br>WARTOSC_POCHYLENIA: 3,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7849503</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7485957</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7849503,50.7485957,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50.66</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7866019<br>GIS_SZ: 50.7500569<br>WARTOSC_POCHYLENIA: 9,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7866019</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7500569</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>9.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7866019,50.7500569,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>46.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7291177<br>GIS_SZ: 50.7378320<br>WARTOSC_POCHYLENIA: -1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7291177</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7378320</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7291177,50.737832,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>49.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7737999<br>GIS_SZ: 50.7450494<br>WARTOSC_POCHYLENIA: 5,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7737999</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7450494</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7737999,50.7450494,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>49.8</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7772417<br>GIS_SZ: 50.7454792<br>WARTOSC_POCHYLENIA: 8,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7772417</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7454792</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>8.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7772417,50.7454792,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>46.85</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7392730<br>GIS_SZ: 50.7384196<br>WARTOSC_POCHYLENIA: -2,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7392730</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7384196</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.739273,50.7384196,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>47.125</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7423700<br>GIS_SZ: 50.7399081<br>WARTOSC_POCHYLENIA: -4,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7423700</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7399081</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.74237,50.7399081,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>50.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7888566<br>GIS_SZ: 50.7516638<br>WARTOSC_POCHYLENIA: 8,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7888566</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7516638</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>8.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7888566,50.7516638,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>51.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7925376<br>GIS_SZ: 50.7529813<br>WARTOSC_POCHYLENIA: 7,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7925376</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7529813</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>7.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7925376,50.7529813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>51.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.7967221<br>GIS_SZ: 50.7533695<br>WARTOSC_POCHYLENIA: 9,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.7967221</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7533695</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>9.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.7967221,50.7533695,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>52.3</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8075983<br>GIS_SZ: 50.7514205<br>WARTOSC_POCHYLENIA: 5,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8075983</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7514205</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>5.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8075983,50.7514205,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>52.525</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8106093<br>GIS_SZ: 50.7507416<br>WARTOSC_POCHYLENIA: 2,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8106093</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7507416</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8106093,50.7507416,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>52.85</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8149589<br>GIS_SZ: 50.7497672<br>WARTOSC_POCHYLENIA: 1,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8149589</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7497672</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8149589,50.7497672,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>53.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8184281<br>GIS_SZ: 50.7493479<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8184281</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7493479</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8184281,50.7493479,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>53.5</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8240732<br>GIS_SZ: 50.7495936<br>WARTOSC_POCHYLENIA: 3,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8240732</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7495936</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>3.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8240732,50.7495936,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>53.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8296703<br>GIS_SZ: 50.7501039<br>WARTOSC_POCHYLENIA: 4,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8296703</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7501039</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>4.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8296703,50.7501039,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54.1</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8322414<br>GIS_SZ: 50.7508440<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8322414</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7508440</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8322414,50.750844,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54.55</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8371609<br>GIS_SZ: 50.7534059<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8371609</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7534059</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8371609,50.7534059,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54.815</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8400079<br>GIS_SZ: 50.7549558<br>WARTOSC_POCHYLENIA: 2,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8400079</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7549558</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>2.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8400079,50.7549558,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>55.28</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8450028<br>GIS_SZ: 50.7576762<br>WARTOSC_POCHYLENIA: 1,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8450028</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7576762</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>1.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8450028,50.7576762,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>55.48</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8471517<br>GIS_SZ: 50.7588458<br>WARTOSC_POCHYLENIA: 0]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8471517</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7588458</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>0.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8471517,50.7588458,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>56.75</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8608021<br>GIS_SZ: 50.7662907<br>WARTOSC_POCHYLENIA: -1,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8608021</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7662907</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8608021,50.7662907,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57.075</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8642975<br>GIS_SZ: 50.7681970<br>WARTOSC_POCHYLENIA: -4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8642975</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7681970</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8642975,50.768197,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57.325</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8668909<br>GIS_SZ: 50.7697284<br>WARTOSC_POCHYLENIA: -5,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8668909</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7697284</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8668909,50.7697284,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57.525</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8687309<br>GIS_SZ: 50.7710977<br>WARTOSC_POCHYLENIA: -6,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8687309</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7710977</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8687309,50.7710977,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>57.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8721809<br>GIS_SZ: 50.7736648<br>WARTOSC_POCHYLENIA: -3,4]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8721809</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7736648</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8721809,50.7736648,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>58.15</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8749500<br>GIS_SZ: 50.7750608<br>WARTOSC_POCHYLENIA: -6,3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8749500</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7750608</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.3</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.87495,50.7750608,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>58.35</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8774555<br>GIS_SZ: 50.7758877<br>WARTOSC_POCHYLENIA: -4,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8774555</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7758877</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-4.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8774555,50.7758877,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>58.65</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8811985<br>GIS_SZ: 50.7770838<br>WARTOSC_POCHYLENIA: -9,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8811985</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7770838</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-9.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8811985,50.7770838,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59.05</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8860952<br>GIS_SZ: 50.7787863<br>WARTOSC_POCHYLENIA: -6,5]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8860952</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7787863</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-6.5</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8860952,50.7787863,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59.275</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8886499<br>GIS_SZ: 50.7799535<br>WARTOSC_POCHYLENIA: -7,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8886499</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7799535</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8886499,50.7799535,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59.525</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8915265<br>GIS_SZ: 50.7813129<br>WARTOSC_POCHYLENIA: -2,9]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8915265</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7813129</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.9</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8915265,50.7813129,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>59.85</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8951667<br>GIS_SZ: 50.7831586<br>WARTOSC_POCHYLENIA: -10]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8951667</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7831586</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-10.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8951667,50.7831586,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>60.7</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.9027066<br>GIS_SZ: 50.7891228<br>WARTOSC_POCHYLENIA: -7,8]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.9027066</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7891228</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-7.8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.9027066,50.7891228,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>60.9</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.9039729<br>GIS_SZ: 50.7907308<br>WARTOSC_POCHYLENIA: -5,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.9039729</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7907308</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-5.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.9039729,50.7907308,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>61.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.9058731<br>GIS_SZ: 50.7931492<br>WARTOSC_POCHYLENIA: -2,2]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.9058731</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7931492</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-2.2</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.9058731,50.7931492,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>61.575</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.9083012<br>GIS_SZ: 50.7962316<br>WARTOSC_POCHYLENIA: -0,7]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.9083012</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7962316</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.7</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.9083012,50.7962316,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>61.85</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.9100170<br>GIS_SZ: 50.7984222<br>WARTOSC_POCHYLENIA: -1,3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.9100170</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7984222</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.3</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.910017,50.7984222,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>56.2</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8548854<br>GIS_SZ: 50.7630659<br>WARTOSC_POCHYLENIA: -3]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8548854</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7630659</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-3.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8548854,50.7630659,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>54.325</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8347477<br>GIS_SZ: 50.7520870<br>WARTOSC_POCHYLENIA: -1]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8347477</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7520870</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8347477,50.752087,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>55.95</name>
+      <description><![CDATA[NAZWA_LINII: ZAWADA - HRUBIESZÓW MIASTO<br>NR_LIN_KOL4: 72<br>TOR_LINII5: N<br>GIS_DL: 23.8521972<br>GIS_SZ: 50.7615993<br>WARTOSC_POCHYLENIA: -0,6]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="NAZWA_LINII">
+          <value>ZAWADA - HRUBIESZÓW MIASTO</value>
+        </Data>
+        <Data name="NR_LIN_KOL4">
+          <value>72.0</value>
+        </Data>
+        <Data name="TOR_LINII5">
+          <value>N</value>
+        </Data>
+        <Data name="GIS_DL">
+          <value>23.8521972</value>
+        </Data>
+        <Data name="GIS_SZ">
+          <value>50.7615993</value>
+        </Data>
+        <Data name="WARTOSC_POCHYLENIA">
+          <value>-0.6</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          23.8521972,50.7615993,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
